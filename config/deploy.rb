@@ -1,6 +1,6 @@
-set :application, "ctshryock.com"
+set :application, "drustz.com"
 
-set :repository,  "clint@localhost:webapps/git/repos/ctshryock.com.git"
+set :repository,  "clint@localhost:webapps/git/repos/drustz.github.io.git"
 set :deploy_via, :remote_cache
 set :deploy_to, '/home/clint/webapps/htdocs/'
 
