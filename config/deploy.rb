@@ -7,7 +7,7 @@ set :deploy_to, '/home/clint/webapps/htdocs/'
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-server "ctshryock.com", :app, :web, :db, :primary => true                       # Your HTTP server, Apache/etc
+server "drustz.com", :app, :web, :db, :primary => true                       # Your HTTP server, Apache/etc
 
 
 set :title, ENV['title'] if ENV['title']
