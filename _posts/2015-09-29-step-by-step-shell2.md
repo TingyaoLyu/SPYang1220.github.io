@@ -10,9 +10,8 @@ tags: programming, operating system
 <p>为了高标准完成作业，我按照原BSD版本的shell实现了工作管理，即job control。而这一项任务，实在是值得另开一篇文章。</p>
 <h3>什么是Job Control</h3>
 <p>打开你的shell，然后输入cat，回车，你会看到光标在等待你的键盘输入。随便输点什么，回车，他会原样输出。cat是一个输出程序，将输入给它的字节流原封不动流到标准输出。现在我们如何结束它？你可以按下Ctrl-C，它会收到上篇我们讲到的SIGINT信号，然后终止。但如果你按下Ctrl-Z，你会发现shell会出现一个提示：</p>
-<!-- HTML generated using hilite.me -->
 <div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Job 1, <span style="color: #4070a0">&#39;cat&#39;</span> has stopped
-</pre></div>
+</pre></div><br>
 <p>接着输入``jobs``，就会输出刚刚被你停止的那个cat进程，包括他的Group id、目前状态(Stropped)。此时如果输入``fg``或者``fg 1(假设cat的job 编号是 1的话)``，就会发现cat又从后台停止回到了前台运行状态。这里有个小细节要注意，如果你用的是mac，cat会提示stdin被interrupt，从而终止程序；如果你用的是linux，则不会有这种现象，cat会继续运行。这是mac在实现唤醒操作后会额外发送一个信号打断该程序的标准输入，而如果该程序对此没有处理函数，默认的行为是STOP暂停（对于cat而言则是终止）。这部分有些复杂，看完之后的内容你就会了解。</p>
 <p>看到这里，你大概明白了C-c与C-z的不同：一个是发送中断信号，而另一个则是发送暂停信号。暂停后的进程会被放入后台休息，然后通过fg唤醒某一个后台程序。</p>
 <p>所以，我们要实现的也是这样一个功能：后台与前台的调度。虽说只有一个功能，可背后包含的逻辑，想要搞懂还是很麻烦的。</p>

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-09-27 05:56:14 -0600
+date: 2015-09-27 05:56:14 +0800
 title: "一步一步来，写一个简易shell（基础篇）"
 category: posts
 tags: programming, operating system
