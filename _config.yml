@@ -1,6 +1,6 @@
 highlighter: pygments
 markdown: redcarpet
-exclude: ['swag', 'd.diff', 'Capfile', 'config', 'public', 'Gemfile', 'Gemfile.lock', 'README.md']
+exclude: ['swag', 'd.diff', 'Capfile', 'config', 'public', 'Gemfile', 'Gemfile.lock', 'README.md', vendor]
 relative_permalinks: false
 timezone: America/Chicago
 port: 5000
