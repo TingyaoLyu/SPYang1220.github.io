@@ -68,10 +68,6 @@ def post_layout
   end
 end
 
-def web_error
-  'web-errors/' if category =~ /web-error/
-end
-
 def file_path
   "_posts/#{web_error}#{post_date}-#{post_name}.md"
 end
