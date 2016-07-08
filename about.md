@@ -57,7 +57,7 @@ English version is below.
 *注意：这个博客不是技术博客。
 </br>
 
-<a href="" target="_blank">我的简历</a> 以及 联系我：<a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
+联系我：<a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 
 <h3>About me</h3>
 <p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan. 21 years old now.</p>
@@ -94,7 +94,5 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 5-year-old p
 </ul>
 
 At last, I'm single.
-
-My <a href="" target="_blank">Curriculum Vitae</a>
-and Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
+Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <br><br><br><br>
