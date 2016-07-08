@@ -1,4 +1,4 @@
-Source for my personal blog [drustz.com](http://drustz.com] powered by [Jekyll](https://github.com/mojombo/jekyll)
+Source for my personal blog [drustz.com](http://drustz.com) powered by [Jekyll](https://github.com/mojombo/jekyll)
 
 ## License
 
