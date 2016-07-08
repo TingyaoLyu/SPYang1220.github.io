@@ -3,6 +3,7 @@ layout: post
 date: 2015-10-11 14:03:14 +0800
 title: Computer Photography：Image Alignment
 category: posts
+comments: true
 tags: programming, computer vision
 ---
 <p>一周过去了，忙忙碌碌做了不少事，现在又到安心写博客的时间啦~</p>

@@ -3,6 +3,7 @@ layout: post
 date: 2015-11-17 
 title: 一步一步了解FAT32文件系统
 category: posts
+comments: true
 tags: programming, operating system 
 ---
 

@@ -3,6 +3,7 @@ layout: post
 date: 2016-06-18 07:27:10 +0800
 title: 提早知道的事实 
 category: posts
+comments: true
 tags: life, reading
 ---
 <br>

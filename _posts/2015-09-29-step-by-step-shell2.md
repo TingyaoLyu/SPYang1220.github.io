@@ -3,6 +3,7 @@ layout: post
 date: 2015-09-29
 title: 一步一步来，写一个简易shell（进阶篇）
 category: posts
+comments: true
 tags: programming, operating system
 ---
 
