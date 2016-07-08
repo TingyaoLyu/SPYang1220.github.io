@@ -16,7 +16,7 @@ layout: nil
    <email>info@ctshryock.com</email>
  </author>
  {% for post in site.posts %}
-    {% if post.category != 'web-errors' and post.category != 'page' %}
+    {% if post.category != 'page' %}
      <entry>
        <title>{{ post.title }} :: {{post.categories}}</title>
        <link href="http://ctshryock.com{{ post.url }}"/>

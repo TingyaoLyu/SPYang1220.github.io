@@ -1,0 +1,33 @@
+.dr-li ul {
+	margin-left: 1em;
+	margin-bottom: 0px;
+	font-size: 0.88em;
+}
+
+.dr-li {
+	list-style-type: none;
+}
+
+a {
+	color:#3498DB;
+}
+
+.ascii {
+	padding: 0;
+	margin: auto;
+	display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px 1em;
+	font-style: normal;
+    font-weight: normal;
+    font-family: "Droid Sans Mono", "Lucida Console", "Andale Mono", "Courier New", "Courier", monospace;
+    font-size: 12px;
+    line-height: 12px;
+	border: 0px;
+}
+
+.ascii-div {
+	clear: both;
+	margin: auto;
+}
