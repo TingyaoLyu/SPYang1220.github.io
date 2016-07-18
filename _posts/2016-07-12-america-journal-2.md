@@ -76,3 +76,6 @@ tags: life, reading
 不过别做什么期待，一般结果都会好。
 
 不远万里来吹海风，也有点奢侈
+
+![image]
+(/static/images/IMG_7480.jpg)
