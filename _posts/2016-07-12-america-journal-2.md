@@ -4,7 +4,7 @@ date: 2016-07-12 21:39:10 +0800
 title: 旅美日记2
 category: posts
 comments: true
-tags: life, reading
+tags: life, personnal
 ---
 
 <strong>7 12</strong>
