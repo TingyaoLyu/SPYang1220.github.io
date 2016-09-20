@@ -39,7 +39,7 @@ tags: life, journey, personnal
 
 
 ![image]
-(/static/images/IMG_8004.JPG)
+(/static/images/IMG_8004.jpg)
 
 每天都要经过的查尔河，还有这座哈佛大桥，再见啦。
 
