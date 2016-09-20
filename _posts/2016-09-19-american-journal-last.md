@@ -46,15 +46,19 @@ tags: life, journey, personnal
 离别之际，感谢一下平时没事倒时差被我主动聊天的朋友们，还要感谢一下迎接我的各位学长。大四应该是挺不平凡的，也希望各位不要让这一年成为自己平凡的开始。
 
 最后是一些旅行时的照片：
-![image]
-(/static/images/IMG_7931.jpg=400x)
-Stanford
+<table border="1" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;text-align:left">
+<tr>
+<td><img src="http://drustz.com/static/images/IMG_7931.jpg" align="left" width="300"/></td>
+<td><img src="http://drustz.com/static/images/IMG_7967.jpg" width="300"/>
+</tr>
+<tr>
+<td>Stanford</td>
+<td>Google</td>
+</tr>
+</table>
 
 ![image]
 (/static/images/IMG_7993.jpg)
-
-![image]
-(/static/images/IMG_7967.jpg)
 Google
 
 ![image]
