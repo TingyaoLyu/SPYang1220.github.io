@@ -47,7 +47,7 @@ tags: life, journey, personnal
 
 最后是一些旅行时的照片：
 ![image]
-(/static/images/IMG_7931.jpg)
+(/static/images/IMG_7931.jpg=400x)
 Stanford
 
 ![image]
