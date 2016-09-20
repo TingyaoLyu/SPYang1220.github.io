@@ -44,3 +44,27 @@ tags: life, journey, personnal
 每天都要经过的查尔河，还有这座哈佛大桥，再见啦。
 
 离别之际，感谢一下平时没事倒时差被我主动聊天的朋友们，还要感谢一下迎接我的各位学长。大四应该是挺不平凡的，也希望各位不要让这一年成为自己平凡的开始。
+
+最后是一些旅行时的照片：
+![image]
+(/static/images/IMG_7931.jpg)
+Stanford
+
+![image]
+(/static/images/IMG_7993.jpg)
+
+![image]
+(/static/images/IMG_7967.jpg)
+Google
+
+![image]
+(/static/images/IMG_8079.jpg)
+Jones Beach Island
+
+![image]
+(/static/images/IMG_8058.jpg)
+Time Square
+
+![image]
+(/static/images/IMG_8082.jpg)
+Boston
