@@ -8,7 +8,7 @@ permalink: about.html
 {% include banner.md %}
 English version is below.
 <p>张明瑞，中原古城开封人，生年1995，卒年未知。</p>
-<p>清华大学13级就读计算机系。16年暑期（现在）在<a href="http://fluid.media.mit.edu/">Fluid Interfaces</a>@MIT Media Lab研究</p>
+<p>清华大学13级就读计算机系。16年暑期在<a href="http://fluid.media.mit.edu/">Fluid Interfaces</a>@MIT Media Lab研究, 现在大四 准备实习。</p>
 <p>目前单身，不是沉默的大多数。</p>
 <li ><h5>学校<h5></li>
 <ul>
