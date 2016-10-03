@@ -6,7 +6,45 @@ permalink: about.html
 ---
 
 {% include banner.md %}
-English version is below.
+中文简介请见下方。
+<h3>About me</h3>
+<p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan. 21 years old now.</p>
+<p>I'm studying Computer Science and Engineering in Tsinghua University from 2013 to 2017. 
+ I was an exchange student in the Chinese University of Hong Kong, and this summer I was in Fluid Interface @MIT Media Lab as a visiting student. Currently I'm seeking for internship.</p>
+
+<li><h5>Research</h5></li>
+<ul>
+<p>I love Human-Computer Interaction, and I also researched in Machine Learning. I once worked in the HCI Lab of Tsinghua, now at Multimedia Lab of CUHK.</p>
+<p>2016 Summer I'm in MIT Media Lab.</p>
+<p>I've explored many possibilities in CS to figure out what I'm interested.</p>
+</ul>
+
+<li><h5>Enteprise</h5></li>
+<ul>
+<p>I was a co-founder of LEEZEE Inc., Beijing.</p>
+<p>I worked in Mailtime as an iOS intern.</p>
+</ul>
+
+<li><h5>Lifes</h5></li>
+<ul>
+<p>I love biking. I cycled from Chengdu, Sichuan to Tibet in the summer of 2013.</p>
+<p>Sing songs, and play guitar(almost forget!).</p>
+</ul>
+
+<li><h5>My friends</h5></li>
+<ul>
+Wen He(moreD), Liu Yifang, Liu Yuqun, Zhang Yiming and Bao Yuxiang
+</ul>
+
+<li><h5>Family</h5></li>
+<ul>
+My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 5-year-old poodle.
+</ul>
+
+At last, I'm single.
+Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
+<br>
+
 <p>张明瑞，中原古城开封人，生年1995，卒年未知。</p>
 <p>清华大学13级就读计算机系。16年暑期在<a href="http://fluid.media.mit.edu/">Fluid Interfaces</a>@MIT Media Lab研究, 现在大四 准备实习。</p>
 <p>目前单身，不是沉默的大多数。</p>
@@ -59,40 +97,4 @@ English version is below.
 
 联系我：<a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 
-<h3>About me</h3>
-<p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan. 21 years old now.</p>
-<p>I'm studying Computer Science and Engineering in Tsinghua University from 2013 to 2017. 
- I was an exchange student in the Chinese University of Hong Kong, and now I'm in Fluid Interface @MIT Media Lab as a visiting student.</p>
-
-<li><h5>Research</h5></li>
-<ul>
-<p>I love Human-Computer Interaction, and I also researched in Machine Learning. I once worked in the HCI Lab of Tsinghua, now at Multimedia Lab of CUHK.</p>
-<p>2016 Summer I'm in MIT Media Lab.</p>
-<p>I've explored many possibilities in CS to figure out what I'm interested.</p>
-</ul>
-
-<li><h5>Enteprise</h5></li>
-<ul>
-<p>I was a co-founder of LEEZEE Inc., Beijing.</p>
-<p>I worked in Mailtime as an iOS intern.</p>
-</ul>
-
-<li><h5>Lifes</h5></li>
-<ul>
-<p>I love biking. I cycled from Chengdu, Sichuan to Tibet in the summer of 2013.</p>
-<p>Sing songs, and play guitar(almost forget!).</p>
-</ul>
-
-<li><h5>My friends</h5></li>
-<ul>
-Wen He(moreD), Liu Yifang, Liu Yuqun, Zhang Yiming and Bao Yuxiang
-</ul>
-
-<li><h5>Family</h5></li>
-<ul>
-My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 5-year-old poodle.
-</ul>
-
-At last, I'm single.
-Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <br><br><br><br>
