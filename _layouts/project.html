@@ -2,271 +2,194 @@
 layout: default
 ---
 <head>
-<!--	for projects	-->
 	<style type="text/css">
-        div.container-fluid a:link, div.container-fluid a:visited
-        {
-            color: #09c;
-            text-decoration: none;
-        }
-        div.container-fluid a:hover
-        {
-            color: #c33;
-            text-decoration: none;
-        }
-        
-        a.paper_link
-        {
-            display: inline-block; /*background: url("images/PDF.jpg") center right no-repeat;*/
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .title {
-            font-size: large;
-            font-family: sans-serif;
-        }
-
-        .description{
-            font-family: STKaiti, arial;
-            font-size: medium;
-        }
-		.row {
-			margin-bottom: 2.4em;		
-		}
-		.row td:first-of-type{
-			width: 165px;
-		}
-		.descol{
-			margin-left: 30px;
+		#project {
+			clear: both;
+			margin-bottom: 10%;
 		}
 		
-		
-    </style>
-<!--	for publication		-->
-    <style type="text/css">
-        div.container-fluid a:link, div.container-fluid a:visited
-        {
-            color: #09c;
-            text-decoration: none;
-        }
-        div.container-fluid a:hover
-        {
-            color: #c33;
-            text-decoration: none;
-        }
-		li{
-			list-style-type: none;
+		#project:before, #project:after {
+			content: " ";
+			display: table;
+			clear: both;
 		}
-        a.paper_link
-        {
-            display: inline-block; /*background: url("images/PDF.jpg") center right no-repeat;*/
-            text-decoration: none;
-            font-weight: bold;
-        }
-        img.thumbnail
-        {
-            width: 160px; 
-        }
-       .title {
-            font-size: large;
-            font-family: sans-serif;
-        }
+		
+		#project #project_wrapper{
+			width: 110%;
+			margin-left: -13%;
+		}
+		
+		#project #project_wrapper:nth-child(2n+1) {
+			clear: left;
+		}
+		
+		#project #project_wrapper .project_block {
+			cursor: pointer;
+			position: relative;
+			float: left;
+			margin-left: 3.9%;
+			margin-top: 3%;
+			width: 46%;
+		}
+		
+		#project #project_wrapper .project_block .project-image {
+			background: #eee;
+			margin-bottom: 3%;
+		}
+		
+		#project #project_wrapper .project_block .project_image .intrinsic {
+			padding-bottom: 100%;
+			line-height: 0;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.intrinsic .content_fill {
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		
+		.imgborder {
+		   display:inline-block;
+		   position:relative;
+		   border:3px solid #eee;
+		   padding:3px;
+		   background:#f2f2f2;
+		}
+		
 
-        .description{
-            font-family: STKaiti, arial;
-            font-size: medium;
-        }
-    </style>
+		.imgborder:before, .imgborder:after {
+		   z-index: -1;
+		   position: absolute;
+		   content: "";
+		   bottom: 10px;
+		   left: 10px;
+		   width: 50%;
+		   top: 80%;
+		   max-width:300px;
+		   background: #777;
+		   -webkit-box-shadow: 0 15px 10px #777;
+		   -moz-box-shadow: 0 15px 10px #777;
+		   box-shadow: 0 15px 10px #777;
+		   -webkit-transform: rotate(-3deg);
+		   -moz-transform: rotate(-3deg);
+		   -o-transform: rotate(-3deg);
+		   -ms-transform: rotate(-3deg);
+		   transform: rotate(-3deg);
+		}
+		.imgborder:after {
+		   -webkit-transform: rotate(3deg);
+		   -moz-transform: rotate(3deg);
+		   -o-transform: rotate(3deg);
+		   -ms-transform: rotate(3deg);
+		   transform: rotate(3deg);
+		   right: 10px;
+		   left: auto;
+		}
+		
+		#project #project_wrapper .project_block .project_title {
+			font-family: 'Montserrat', 'Lucida Sans Unicode', 'Arial Black', sans-serif;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: .06em;
+			text-align: center;
+			font-weight: 300;
+			font-style: normal;
+			color: #404040;
+		}
+	</style>
 </head>
 <!-- PROJECTS -->
-<h4><strong>* 时间由近及远 Chronological</strong></h4>
-	<table class="row">
-        <tr><td>
-			<img class="thumbnail" src="/static/images/emg.png" alt="" >
-		</td><td>	
-        <div class="descol">
-			<li><span class="title"><a class="paper_link" href="https://drive.google.com/file/d/0B7KvsIGWgPrRWkVvSWpma2ZOd3M/view?usp=sharing" target="_blank">Shoulder Interaction Device 肩膀控制器</a></span>
-				<br>
-					<a href="http://fluid.media.mit.edu/" target="_blank">Fluid Interfaces Group</a> Media Lab@MIT
-				<br>
-                	Together with<a href="http://www.hugomasclet.com">@Hugo</a>
-				<br>
-				<font color="green" class="description">Explore the possibility of Muscle-Computer interface. A control device using shoulder EMG as input signal. Shoulder's movement recognition. More detail please watch our presentation slides.<p>一个用肩膀肌肉电信号作为输入的控制设备。能够识别肩膀动作。
-                    
-            </span></li>
-		</div>
-		</td></tr>
-    </table>
-
-	<table class="row">
-        <tr><td>
-			<img class="thumbnail" src="/static/images/fluxa.jpg" alt="" >
-		</td><td>	
-        <div class="descol">
-			<li><span class="title"><a href="http://fluid.media.mit.edu/node/457" target="_blank">Fluxa</a></span>
-				<br>
-					<a href="http://fluid.media.mit.edu/" target="_blank">Fluid Interfaces Group</a> Media Lab@MIT
-				<br>
-                	Together with<a href="http://xxxxxxxxxinliu.com">@Xin Liu</a>
-				<br>
-				<font color="green" class="description">A wearable device utilizes POV(Persistence of Vision) to display light effects while moving. LED array. Accepted in UIST 2016 Demo Session.<p>可穿戴LED设备，利用视觉残留效应显示图片或者文字。
-                <br>
-                <strong>See our <a href="http://motherboard.vice.com/read/wave-emojis-at-your-friends-with-velcro-leds" target="_blank">Tech Report by Motherboard</a></strong>
-            </span></li>
-		</div>
-		</td></tr>
-    </table>
-
-	<table class="row">
-        <tr><td>
-			<img class="thumbnail" src="/static/images/shoot.jpg" alt="" >
-		</td><td>	
-        <div class="descol">
-			<li><span class="title">Introduce myself 张明瑞的自我介绍</span>
-				<p> </p>
-				<font color="green" class="description">A self-introduction video made by myself<p>这是我自己拍摄的自我介绍视频
-            </li>
-			VIDEO <a href="http://www.tudou.com/programs/view/PjckCQ_dhc4/"> @tudou  </a>
-		</div>
-		</td></tr>
-    </table>
-
-	<table class="row">
-        <tr><td>
-			<img class="thumbnail" src="/static/images/qxlogo.png" alt="" >
-		</td><td>	
-        <div class="descol">
-			<li><span class="title"><a class="paper_link" href="http://1.tsinghuamap.applinzi.com" target="_blank">A Trip in Tsinghua 清华游园指南</a></span>
-				<br>
-					<a href="http://www.tsjc.tsinghua.edu.cn/publish/jc/269/index.html" target="_blank">清新时报</a> QingXin Times
-				<br>
-				<p> </p>
-				<font color="green" class="description">A Mobile HTML5 application to introduce activities of the 105th anniversary of Tsinghua University. Written in JS.<p>清华105年校庆 游园活动指南 HTML5 JS 移动端互动地图
-                    
-            </span></li>
-		</div>
-		</td></tr>
-    </table>
-
-    <table class="row">
-        <tr><td>
-			<img class="thumbnail" src="http://parocam.com/img/icon.png" alt="" >
-		</td><td>	
-        <div class="descol">
-            <li><span class="title"> <a href="http://parocam.com">Parocam 有劲相机</a></span>
-				<br>
-				<a href="http://weibo.com/ahhface">栗子工作室</a>
-				<br>
-				<p> </p>
-				<font color="green" class="description">A funny camera app which can transform your face <p>iOS搞怪脸部变形相机 视频/拍照 人脸识别                    
-            </span></li>
-		</div>
-		</td></tr>
-    </table>
-
-	<table class="row">
-			<tr><td>
-                <img class="thumbnail" src="/static/images/tsports.png" alt="" >
-			</td><td>
-			<div class="descol">
-            <li><span class="title"> TSports </span>
-					<br>
-                      清华大学附属小学
-					<br>
-					<p> </p>
-                    <font color="green" class="description">Online soccer video stream platform of Tsinghua Primary School, build on iOS, watch live/uploaded video about students' activity.<p>iOS为清华附小开发的足球视频平台 </p></font>                    
-				</span></li>
+<div id = "project">
+<div id="project_wrapper">
+	<a class="project_block" href="emg.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../static/images/portfolio/emg.png" style="top: 0px; height: 320px; position: relative;">
+					</div>
+				</div>
 			</div>
-			</td></tr>
-		</table>
-
-	<table class="row">
-			<tr><td>
-                <img class="thumbnail" src="/static/images/voicepp.png" alt="" >
-			</td><td>
-			<div class="descol">
-            <li><span class="title"> VOICE++ </a></span>
-					<br>
-                        Together with 合作开发<a href="https://github.com/moreD">@温和</a>
-					<br>
-                    <font color="green" class="description">  Voice print recognition on hardware, MFCC voice recognition algorithm. It can recognize different people's voice feature.<p>verilog 硬件平台的声纹识别设备 </p></font>
-                    VIDEO <a href="http://www.tudou.com/programs/view/uEjWp8haxoI/"> @tudou  </a><a href="https://www.youtube.com/watch?v=5YTHiGeH6Ro"> @youtube</a>
-
-				</span></li>
+		</div>	
+		<div class="project_title">Shoulder Interaction Device</div>
+		</div>
+	</a>
+	<a class="project_block" href="fluxa.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../static/images/portfolio/fluxa.jpg" style="top: 0px; height: 320px; position: relative;">
+					</div>
+				</div>
 			</div>
-			</td></tr>
-	</table>
-
-	<table class="row">
-			<tr><td>
-                <img class="thumbnail" src="/static/images/ray.jpeg" alt="" >
-			</td><td>
-			<div class="descol">
-            <li><span class="title"><a class="paper_link" href="https://github.com/DrustZ/DrRayTracer" target="_blank"> DrRayTracer </a></span>
-					<br>
-                        图形学课程 A Computer Graphics course project
-					<br>
-					<p> </p>
-                    <font color="green" class="description"> A basic Raytracer implemented by me <p>计算机系图形学课程大作业，无蒙特卡洛光线追踪 </p> </font>
-				</span></li>
+		</div>	
+		<div class="project_title">Fluxa</div>
+		</div>
+	</a>
+	<a class="project_block" href="parocam.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../static/images/portfolio/parocam.png" style="top: 0px; height: 320px; position: relative;">
+					</div>
+				</div>
 			</div>
-			</td></tr>
-	</table>
-
-	<table class="row">
-			<tr><td>
-                <img class="thumbnail" src="http://join-tsinghua.edu.cn/publish/bzw/7583/20141217154544047422506/js3.jpg" alt="" >
-			</td><td>
-			<div class="descol">
-            <li><span class="title"><strong>DAN9</strong></span>
-					<br>
-                        清华大学计算机系学生节
-					<br>
-					<p> </p>
-                    <font color="green" class="description"> A weChat backend server transmitting messages to the danmark server, implemented with PHP.<p>计算机系微信公众号后端，以及微信平台的发送弹幕接口，后台用PHP实现 </p> </font>
-				</span></li>
-		            附我写的新闻稿： <a href="http://www.icaijing.com/wemedia/article2204900/">是谁重新定义了学生节</a>
+		</div>	
+		<div class="project_title">Parocam</div>
+		</div>
+	</a>
+	<a class="project_block" href="ATK.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../static/images/portfolio/ATK.jpg" style="top: 0px; height: 320px; position: relative;">
+					</div>
+				</div>
 			</div>
-			</td></tr>
-	</table>
-
-	<table class="row">
-			<tr><td>
-                <img class="thumbnail" src="/static/images/wordmemo.png" alt="" >
-			</td><td>
-			<div class="descol">
-            <li><span class="title"><strong>WordMemo</strong></span>
-					<br>
-                        OOP FINAL PROJECT & FIRST PROJECT IN MY LIFE
-					<br>
-					<p> </p>
-                    <font color="green" class="description"> Words memorizing software, supporting dict import and Ebbinghaus method, implemented with Qt C++.<p>Qt单词记忆软件，支持导入词典以及曲线记忆</p></font>
-				</span></li>
+		</div>	
+		<div class="project_title">ATK: Air Typing</div>
+		</div>
+	</a>
+	<a class="project_block" href="voicepp.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../static/images/portfolio/voicepp.png" style="top: 0px; height: 320px; position: relative;">
+					</div>
+				</div>
 			</div>
-			</td></tr>
-	</table>
-
-
-<!-- PUBLICATIONS -->
-<h2><strong>发表文章 Publications</strong></h2>
-
-    <table class="row">
-		<tr><td>
-			<img class="thumbnail" src="/static/images/ATK.jpg" alt="" >
-		</td><td>
-        <div class="descol">
-            <li><span class="title"><a class="paper_link" href="http://dl.acm.org/citation.cfm?id=2807504" target="_blank"> ATK: Enabling Ten-Finger Freehand Typing in Air Based on 3D Hand Tracking Data </a></span>
-                <br>
-                <span class="details">Xin Yi, Chun Yu, <strong>Mingrui Zhang</strong>, Sida Gao
-                    <br>
-                    The ACM Symposium on User Interface Software and Technology <strong>(UIST)</strong>, 2015
-                    <br>
-                    <p> </p>
-					<font color="green" class="description">A novel air-typing method, Leapmotion tracking fingers,improved Bayes prediction model, with application developed<p>在空中打字的技术，利用Leapmotion捕捉手指，贝叶斯语言模型，开发了相关应用</p></font>
-                    <br>
-                    
-            </span></li><br>
-		</div></td></tr>
-    </table>
-
+		</div>	
+		<div class="project_title">VOICE++</div>
+		</div>
+	</a>
+	<a class="project_block" href="drraytracer.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../static/images/portfolio/ray.jpeg" style="top: 0px; height: 320px; position: relative;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="project_title">DrRayTracer</div>
+		</div>
+	</a>
+</div>
+</div>

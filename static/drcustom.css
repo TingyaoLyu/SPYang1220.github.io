@@ -31,3 +31,42 @@ a {
 	clear: both;
 	margin: auto;
 }
+
+/*projects page*/
+.P-title {
+	font-family: 'Montserrat', 'Lucida Sans Unicode', 'Arial Black', sans-serif;
+}
+
+.P-subtitle {
+	font-family: 'Montserrat', 'Lucida Sans Unicode', 'Arial Black', sans-serif;
+	margin-top: 2em;
+}
+
+.P-page {
+	margin-bottom: 10%;
+	margin-left: -9%;
+	padding-right: 3%;
+	font-size: 15px;
+	font-family : 'Raleway', Arial, sans-serif;
+	color: #565656;
+}
+
+.P-list {
+	font-weight: 600;
+	color: darkgray;
+}
+
+.P-galary {
+	margin-top: 1em;
+}
+
+.P-galary td {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.P-iframe {
+	margin: 0 auto;
+	display: block;
+}

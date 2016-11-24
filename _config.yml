@@ -1,5 +1,6 @@
 highlighter: pygments
 markdown: redcarpet
+include: ['_projects']
 exclude: ['swag', 'd.diff', 'Capfile', 'config', 'public', 'Gemfile', 'Gemfile.lock', 'README.md', vendor]
 relative_permalinks: false
 timezone: America/Chicago
