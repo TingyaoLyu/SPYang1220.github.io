@@ -10,12 +10,12 @@ permalink: about.html
 <h3>About me</h3>
 <p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan. 21 years old now.</p>
 <p>I'm studying Computer Science and Engineering in Tsinghua University from 2013 to 2017. 
- I was an exchange student in the Chinese University of Hong Kong, and this summer I was in Fluid Interface @MIT Media Lab as a visiting student. Currently I'm seeking for internship.</p>
+ I was an exchange student in the Chinese University of Hong Kong, and this summer I was in Fluid Interface @MIT Media Lab as a visiting student. Currently I'm intern in Momenta.ai, a company researching on auto driving.</p>
 
 <li><h5>Research</h5></li>
 <ul>
-<p>I love Human-Computer Interaction, and I also researched in Machine Learning. I once worked in the HCI Lab of Tsinghua, now at Multimedia Lab of CUHK.</p>
-<p>2016 Summer I'm in MIT Media Lab.</p>
+<p>I love Human-Computer Interaction, and I also researched in Machine Learning. I once worked in the HCI Lab of Tsinghua and Multimedia Lab of CUHK.</p>
+<p>2016 Summer I was in MIT Media Lab.</p>
 <p>I've explored many possibilities in CS to figure out what I'm interested.</p>
 </ul>
 
@@ -23,6 +23,7 @@ permalink: about.html
 <ul>
 <p>I was a co-founder of LEEZEE Inc., Beijing.</p>
 <p>I worked in Mailtime as an iOS intern.</p>
+<p>I currently work in Momenta.ai.</p>
 </ul>
 
 <li><h5>Lifes</h5></li>
@@ -41,13 +42,12 @@ Wen He(moreD), Liu Yifang, Liu Yuqun, Zhang Yiming and Bao Yuxiang
 My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 5-year-old poodle.
 </ul>
 
-At last, I'm single.
 Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <br>
 
 <p>张明瑞，中原古城开封人，生年1995，卒年未知。</p>
-<p>清华大学13级就读计算机系。16年暑期在<a href="http://fluid.media.mit.edu/">Fluid Interfaces</a>@MIT Media Lab研究, 现在大四 准备实习。</p>
-<p>目前单身，不是沉默的大多数。</p>
+<p>清华大学13级就读计算机系。16年暑期在<a href="http://fluid.media.mit.edu/">Fluid Interfaces</a>@MIT Media Lab研究, 现在大四 在Momenta.ai自动驾驶公司实习。</p>
+<p>不是沉默的大多数。</p>
 <li ><h5>学校<h5></li>
 <ul>
 <p>我在贵系担任15届科协网络部部长，大二和其他成员在网络部做出很多成果，包括学生节的三大创新。</p>
@@ -71,6 +71,7 @@ Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <p>15年夏在 商汤科技 水一个月。</p>
 <p>16年春夏我在 Mailtime 担任iOS实习生。</p>
 <p>我在创业。工作团队是北京栗子工作室，由清华美院学长王鑫带领。目前作品为iOS端的“有劲相机”，现已退出</p>
+<p>我在Momenta.ai，一家研究自动驾驶的公司实习。</p>
 <p>未来会考虑成立公司。</p>
 </ul>
 
