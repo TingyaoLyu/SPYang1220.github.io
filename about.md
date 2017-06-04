@@ -12,32 +12,32 @@ permalink: about.html
 <p>I'm studying Computer Science and Engineering in Tsinghua University from 2013 to 2017. 
  I was an exchange student in the Chinese University of Hong Kong, and this summer I was in Fluid Interface @MIT Media Lab as a visiting student. Currently I'm intern in Momenta.ai, a company researching on auto driving.</p>
 
-<li><h5>Research</h5></li>
+<h5>Research</h5>
 <ul>
 <p>I love Human-Computer Interaction, and I also researched in Machine Learning. I once worked in the HCI Lab of Tsinghua and Multimedia Lab of CUHK.</p>
 <p>2016 Summer I was in MIT Media Lab.</p>
 <p>I've explored many possibilities in CS to figure out what I'm interested.</p>
 </ul>
 
-<li><h5>Enteprise</h5></li>
+<h5>Enteprise</h5>
 <ul>
 <p>I was a co-founder of LEEZEE Inc., Beijing.</p>
 <p>I worked in Mailtime as an iOS intern.</p>
 <p>I currently work in Momenta.ai.</p>
 </ul>
 
-<li><h5>Lifes</h5></li>
+<h5>Lifes</h5>
 <ul>
 <p>I love biking. I cycled from Chengdu, Sichuan to Tibet in the summer of 2013.</p>
 <p>Sing songs, and play guitar(almost forget!).</p>
 </ul>
 
-<li><h5>My friends</h5></li>
+<h5>My friends</h5>
 <ul>
 Wen He(moreD), Liu Yifang, Liu Yuqun, Zhang Yiming and Bao Yuxiang
 </ul>
 
-<li><h5>Family</h5></li>
+<h5>Family</h5>
 <ul>
 My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 5-year-old poodle.
 </ul>
@@ -48,7 +48,7 @@ Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <p>张明瑞，中原古城开封人，生年1995，卒年未知。</p>
 <p>清华大学13级就读计算机系。16年暑期在<a href="http://fluid.media.mit.edu/">Fluid Interfaces</a>@MIT Media Lab研究, 现在大四 在Momenta.ai自动驾驶公司实习。</p>
 <p>不是沉默的大多数。</p>
-<li ><h5>学校<h5></li>
+<li><h5>学校<h5></li>
 <ul>
 <p>我在贵系担任15届科协网络部部长，大二和其他成员在网络部做出很多成果，包括学生节的三大创新。</p>
 <p>同时，我在读新闻二学位。</p>
@@ -56,7 +56,7 @@ Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <p>最后，我的三位室友：温和，蒋文明，钱迪晨。</p>
 </ul>
 
-<li><h5>科研</h5></li>
+<h5>科研</h5>
 <ul>
 <p>对人机交互十分热爱,尤其是输入方式（触屏输入）以及如何更加自然地与设备交互。</p>
 <p>我从大二开始在清华大学人机交互实验室，和易鑫学长完成了为期半年的空中打字项目，成果被UIST接收。</p>
@@ -65,7 +65,7 @@ Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <p>未来更想做非代码类的研究。</p>
 </ul>
 
-<li><h5>工业界</h5></li>
+<h5>工业界</h5>
 <ul>
 <p>我的实习经验不多。</p>
 <p>15年夏在 商汤科技 水一个月。</p>
@@ -75,26 +75,26 @@ Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <p>未来会考虑成立公司。</p>
 </ul>
 
-<li><h5>兴趣</h5></li>
+<h5>兴趣</h5>
 <ul>
 <p>对音乐感兴趣，然而小提琴与吉他的弦早就生锈了。</p>
 <p>喜欢读书，最喜欢作家韩寒与钱钟书。</p>
 <p>喜欢骑自行车，曾于2014夏骑行川藏线，后摔车骨折，改徒搭到达。</p>
 </ul>
 
-<li><h5>朋友们</h5></li>
+<h5>朋友们</h5>
 <ul>
 <p>我的室友，@温和，一个技术宅。</p>
 <p>四人帮：我，刘一方，刘豫群, 张一鸣以及暴宇翔。</p>
 </ul>
 
-<li><h5>我的父母</h5></li>
+<h5>我的父母</h5>
 <ul>
 我的母亲是一位护士，父亲是政府机构人员。
 </ul>
 <br>
 *注意：这个博客不是技术博客。
-</br>
+<br>
 
 联系我：<a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 
