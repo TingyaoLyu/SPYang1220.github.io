@@ -48,7 +48,7 @@ Contact me: <a href="mailto:z1m6r3@gmail.com" target="_blank">Gmail</a>
 <p>张明瑞，中原古城开封人，生年1995，卒年未知。</p>
 <p>清华大学13级就读计算机系。16年暑期在<a href="http://fluid.media.mit.edu/">Fluid Interfaces</a>@MIT Media Lab研究, 现在大四 在Momenta.ai自动驾驶公司实习。</p>
 <p>不是沉默的大多数。</p>
-<li><h5>学校<h5></li>
+<h5>学校<h5>
 <ul>
 <p>我在贵系担任15届科协网络部部长，大二和其他成员在网络部做出很多成果，包括学生节的三大创新。</p>
 <p>同时，我在读新闻二学位。</p>
