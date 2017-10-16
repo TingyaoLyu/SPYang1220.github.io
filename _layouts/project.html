@@ -12,13 +12,7 @@ layout: page
 			content: " ";
 			display: table;
 			clear: both;
-		}
-		/*
-		#project #project_wrapper{
-			width: 110%;
-			margin-left: -13%;
-		}
-		*/		
+		}	
 		#project #project_wrapper:nth-child(2n+1) {
 			clear: left;
 		}
@@ -31,7 +25,13 @@ layout: page
 			margin-bottom: 3%;
 			width: 46%;
 		}
-		
+		@media only screen and (max-width: 40em) {
+		    /* For mobile phones: */
+		    #project #project_wrapper .project_block {
+		    	width: 100%;
+		    }
+		}
+
 		#project #project_wrapper .project_block .project-image {
 			background: #eee;
 			margin-bottom: 3%;
@@ -118,7 +118,7 @@ layout: page
 				</div>
 			</div>
 		</div>	
-		<div class="project_title">Shoulder Interaction Device</div>
+		<div class="project_title">Shoulder Device</div>
 		</div>
 	</a>
 	<a class="project_block" href="fluxa.html">
