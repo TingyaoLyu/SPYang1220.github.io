@@ -10,17 +10,17 @@ tags: [programming, operating system]
 <p>操作系统又布置了新的作业，拖了两周，今天终于把我的部分做完了。这次的内容也很有用，文件系统，特别是FAT32的实现。</p>
 <p>我们的作业则是要做一个文件恢复的工具。我的部分是读取文件夹以及列出文件夹下相关信息，比较水，但对了解文件系统很有帮助。首先依然是目录：</p>
 
-<ul><a href="#1">1.FAT文件系统知识概览</a></ul>
-<ul><a href="#2">2.如何直接与文件系统交互</a></ul>
-<ul><a href="#3">3.读取Boot Sector</a></ul>
-<ul><a href="#4">4.读取Root Directory</a></ul>
-<ul><a href="#5">5.FAT（File Allocate Table）</a></ul>
-<ul><a href="#6">6.结合起来</a></ul>
-<ul><a href="#7">7.文件删除与恢复</a></ul>
+<ul href="#1">1.FAT文件系统知识概览</a></ul>
+<ul href="#2">2.如何直接与文件系统交互</a></ul>
+<ul href="#3">3.读取Boot Sector</a></ul>
+<ul href="#4">4.读取Root Directory</a></ul>
+<ul href="#5">5.FAT（File Allocate Table）</a></ul>
+<ul href="#6">6.结合起来</a></ul>
+<ul href="#7">7.文件删除与恢复</a></ul>
 
 <hr>
 
-<h3><a id=1>1.FAT文件系统知识概览</a></h3>
+<h3 id=1>1.FAT文件系统知识概览</h3>
 
 <p>文章之初，我们先了解一下，FAT文件系统的知识。首先，什么是文件系统？简而言之，就是存储以及管理文件的一套机制，它涉及到了文件的储存方式、添加删除修改文件等操作的实现以及各种相关操作。大家熟知的文件系统有FAT,NTFS,HFS(MAC系统),ext2/3/4(LINUX)等。我们这里主要关注FAT32系统。</p>
 <li>什么是文件</li>
@@ -50,7 +50,7 @@ tags: [programming, operating system]
 <p>在我们查看某个文件信息而非打开它时，我们并不需要直接访问文件的数据。文件系统会在ROOT DIRECTORY找到相应的FILE ENTRY，然后把相关信息显示出来。这包括：文件名，创建、修改时间，文件大小，文件的第一个cluster的位置，只读/隐藏等等。请注意，文件夹在文件系统中也表示成一个文件，也有相应的FILE ENTRY，只是他们储存的是一批文件而已(FILE ENTRY中会有相应的标志显示是否是文件夹)。</p>
 <p>回到我们删除文件的话题，当一个文件被删除的时候，系统会找到相应的FILE ENTRY，把文件名第一个字符改为0xE5——完毕。就是这么简单，只是把文件属性修改，一点内部数据都没有改动。这时候如果我们再添加一个文件进去，由于系统会通过查找ROOT DIRECTORY来确定可用的空间，因此如果发现一些FILE ENTRY文件名是未分配或者已经删除的标志，那么对应的cluster就会被占用。但是在被覆盖之前，这些删除的文件依然存在在你的硬盘里（只是你丢失了如何获取他们信息的渠道）。这就是为什么删除要更快些。</p>
 
-<h3><a id=2>2.如何直接与文件系统交互</a></h3>
+<h3 id=2>2.如何直接与文件系统交互</h3>
 <p>讲了这么多预备知识，不知道你有没有信心在往下看了。。。（文件系统应该是操作系统中最复杂的部分了）哈哈，不过没关系，如果理解了FAT32的基本原理（你可以去谷歌多多搜索），接下来的内容一定会让你收获颇丰。</p>
 <p>上面提到，我们平时与文件交互的时候，都会触发kernel中的read/write操作。但是我们不会直接与ROOT DIRECTORY、FILE ENTRY等产生接触，而是把文件路径作为参数，调用函数，然后获取包装好的data。那么如何自己实现查找文件并且交互的过程呢？让我来教你~</p>
 <br><ul>
@@ -114,7 +114,7 @@ Checking free cluster summary .
 现在我们回过头来，看看FAT32系统中，最前面的几个reserved cluster是什么区域。
 在第0个cluster中，存放的是一个成为Boot Sector的结构，也就是文件系统刚刚启动时访问的结构。这之中存储着关键信息：例如设备的cluster总数、每个cluster包括了多少sector、每一个sector有多少byte、有多少FAT区域、root dir在第几个cluster等等。具体的信息，可以参考：<a href="http://wiki.osdev.org/FAT">FAT Wiki</a>中的Programming Guide --- Reading the Boot Sector。所以我们下一步的操作，就是要读取Boot sector，获得最基本的信息。
 
-<h3><a id=3>3.读取Boot Sector</a></h3>
+<h3 id=3>3.读取Boot Sector</h3>
 从上面的链接我们可以发现，Boot Sector实际上只是一个C结构体。对于FAT32的版本，表示为：
 <!-- HTML generated using hilite.me -->
 <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">struct</span> <span style="color: #000000">fat_BS</span>
@@ -200,7 +200,7 @@ Checking free cluster summary .
 你会发现和用dosfsck显示的结果一一对应。
 很简单，是吧？现在你已经越过操作系统，亲自和文件系统打交道了，有没有成就感？
 
-<h3><a id=4>4.读取Root Directory</a></h3>
+<h3 id=4>4.读取Root Directory </h3>
 在获得BS中的关键信息之后，我们就来读取Root Direcotry结构。注意，Root Direcotry是在FAT区域之后的，而我们发现，BS结构体中，就拥有表示FAT占用cluster总数的变量，以及reserved clusters总数的变量（也就是之前图中FAT前面那些cluster）。那么获取Root Directory的地址也就轻轻松松：
 <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">ROOT_START</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">BS</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">reserved_sector_count</span> <span style="color: #ce5c00; font-weight: bold">+</span> <span style="color: #000000">BS</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">table_size_32</span> <span style="color: #ce5c00; font-weight: bold">*</span> <span style="color: #000000">BS</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">fat_num</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #ce5c00; font-weight: bold">*</span> <span style="color: #000000">BS</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">bytes_per_sector</span><span style="color: #000000; font-weight: bold">;</span>
 </pre></div>
@@ -236,7 +236,7 @@ Checking free cluster summary .
 这时，a.txt的信息应该就会输出在屏幕上。你可能会注意到，为什么我写了一个cluster-2？这里涉及到一个尝试：Root directory的第一个cluster编号是2（这里编号指的是FAT之后的cluster编号），不过cluster0和1根本就不存在，也就是说，FAT之后第一个cluster的编号就是2。所以我们在读取的时候，Root directory应该紧挨着FAT区域读取，也就是要对cluster进行-2操作。当然，之后读取所有FILE ENTRY中表示文件的第一个cluster的值的时候，我们也都需要进行-2操作。
 <p>读取file entry似乎很简单，不过，我们如何知道哪里是root directory的结束呢？如何知道root directory中有多少文件（file entry）？又如何读取root directory下的sub directories呢？</p>
 
-<h3><a id=5>5.FAT（File Allocate Table）</a></h3>
+<h3 id=5>5.FAT（File Allocate Table）</h3>
 解决上面的问题，需要用到我们的FAT。回想刚刚的内容，FAT表记录着cluster间的连接关系，如果一个cluster之后连接为空，那么自然这一条链到了尽头。那么我们就可以想到这样一个解决方案：如果想遍历整个文件夹的file entries，我们就遍历这个文件夹的所有cluster。而我们在只知道该文件夹第一个file cluster信息的情况下，需要对照FAT中相应cluster中的值，来依次获取下一个cluster的地址。直到下一个地址为空。这样就可以遍历整个文件夹（实际上遍历某个文件的操作也是如此）。
 <p>这里我们要注意一下，FAT32中，每一个file entry的大小是32Byte，而一个cluster可能有上百上千个Byte，所以会出现占用了一个cluster但是并没有完全利用的情况，这种情况我们等下详谈。</p>
 有了明晰的思路后，代码就不难写出来，这里写一个大体的思路：
@@ -261,7 +261,7 @@ Checking free cluster summary .
 <p>你可能注意到了一行代码：cluster &= 0x0FFFFFFF;</p>
 <p>为什么要把最高的四位变为0呢？微软再设计FAT中每个单元的时候，把表示下一个cluster地址的有效位规定为28bits，而非32bit，而FAT32中每一个单元为32bit，所以我们要忽略最高的4位。在fseek与fread中，4表示一个FAT单元的长度（4个byte = 32bit）。</p>
 我想你应该可以实现把整个文件夹遍历的功能了。子文件夹应该也不在话下（只需要对比一下文件名就好）。甚至你已经可以遍历某个文件了（与遍历文件夹的操作相同）。是时候把一切结合起来，做一个完整的遍历功能了！
-<h3><a id=6>6.结合起来</a></h3>
+<h3 id=6>6.结合起来 </h3>
 当我们把代码组合到一起，执行上述的时候，会发现有一些奇怪的现象：例如有些文件的size = -1，而他们的文件名是大小写结合（原文件只有小写）：例如一个文件夹有a.txt，则会输出A.TXT 与Aa.TXT; 或者长文件名的文件/文件夹不会输出，而是用另一种形式表示：例如ABCDEFGHI.TXT表示为ABCDEF~1.TXT等等。
 <p>这些都涉及到一个问题：LFN</p>
 <p>什么是LFN？我想你可能在看到FILE ENTRY的结构体内部后，会有一个问题在心中：name只有11个字符长度，那么如果我的文件/文件夹名字超过11个呢？微软在规定FAT32的时候，使用的是8+3命名规则，也就是扩展名最多3位，文件/文件夹名最多8位字符。但是我们明明可以创建长名文件与文件夹呀！这时候FAT32会怎么做呢？它会给相应的文件/文件夹创建一个LFN结构，每个LFN大小与File entry相同（你可以把LFN看做是一个FIle entry），但是他的ATTRIBUTE有特殊的表示。这个LFN只存储长文件名，其他都交给另一个标准的8+3结构的FILE ENTRY来存储。也就是说，一个长名文件/文件夹会有两个FILE ENTRY，一个是LFN负责存储文件名，一个是8+3的file entry，存储常规的信息。然而第二个File Entry中的文件名就被截取了（也就是我们看到的*~1）。而小写名字也会被创建对应的LFN，以区分大小写不同的文件。</p>
@@ -286,7 +286,7 @@ FILE ENTRY 结构体中的attribute是一个8 bits的变量，每一个bit 为1�
 
 <hr>
 <p><strong>本文参考</strong></p>
-<li><a href="http://wiki.osdev.org/FAT" target="_blank">FAT Wiki</a></li>
-<li><a href="https://www.pjrc.com/tech/8051/ide/fat32.html" target="_blank">Understanding FAT32 Filesystem</a></li>
-<li><a href="http://codeandlife.com/2012/04/02/simple-fat-and-sd-tutorial-part-1/" target="_blank">Simple FAT and SD Tutorial Part 1</a></li>
-<li><a href="http://codeandlife.com/2012/04/07/simple-fat-and-sd-tutorial-part-2/" target="_blank">Simple FAT and SD Tutorial Part 2</a></li>
+<li href="http://wiki.osdev.org/FAT" target="_blank">FAT Wiki</a></li>
+<li href="https://www.pjrc.com/tech/8051/ide/fat32.html" target="_blank">Understanding FAT32 Filesystem</a></li>
+<li href="http://codeandlife.com/2012/04/02/simple-fat-and-sd-tutorial-part-1/" target="_blank">Simple FAT and SD Tutorial Part 1</a></li>
+<li href="http://codeandlife.com/2012/04/07/simple-fat-and-sd-tutorial-part-2/" target="_blank">Simple FAT and SD Tutorial Part 2</a></li>

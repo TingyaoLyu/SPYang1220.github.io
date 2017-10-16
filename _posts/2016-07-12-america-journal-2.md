@@ -76,6 +76,4 @@ tags: [journey, personnal]
 不过别做什么期待，一般结果都会好。
 
 不远万里来吹海风，也有点奢侈
-
-![image]
-(/assets/img/IMG_7480.jpg)
+![image](/assets/img/IMG_7480.jpg)
