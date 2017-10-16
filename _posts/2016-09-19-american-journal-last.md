@@ -38,8 +38,7 @@ tags: [journey, personnal]
 去纽约的大巴上，我旁边坐着一位哈佛的毕业生。我们俩聊大学的生活，我说，到最后一年的时候，看看自己的大学时光，没什么后悔的，如果再来一遍，不一定会做更好。唯一遗憾的，可能就是还没找到个女朋友。其实我们还年轻得很，我看BBC的《人生七年》，第三集大家都是21岁，看到第八集，你会觉得生活充满着转折，但又源于前面的铺垫。
 
 
-![image]
-(/assets/img/IMG_8004.jpg)
+![image](/assets/img/IMG_8004.jpg)
 
 每天都要经过的查尔河，还有这座哈佛大桥，再见啦。
 
@@ -50,25 +49,21 @@ tags: [journey, personnal]
 <tr>
 <td><img src="http://drustz.com/assets/img/IMG_7931.jpg" align="left" width="300"/></td>
 <td><img src="http://drustz.com/assets/img/IMG_7967.jpg" width="300"/>
-</tr>
+</td></tr>
 <tr>
 <td>Stanford</td>
 <td>Google</td>
 </tr>
 </table>
 
-![image]
-(/assets/img/IMG_7993.jpg)
+![image](/assets/img/IMG_7993.jpg)
 Google
 
-![image]
-(/assets/img/IMG_8079.jpg)
+![image](/assets/img/IMG_8079.jpg)
 Jones Beach Island
 
-![image]
-(/assets/img/IMG_8058.jpg)
+![image](/assets/img/IMG_8058.jpg)
 Time Square
 
-![image]
-(/assets/img/IMG_8082.jpg)
+![image](/assets/img/IMG_8082.jpg)
 Boston
