@@ -3,11 +3,11 @@ layout: about
 title: Home
 ---
 
-Greetings! I'm Mingrui Zhang, a first year PhD in [iSchool], University of Washington. My advisor is Prof. [Jacob O. Wobbrock], who directs the [MAD Lab].
+Greetings! I'm Mingrui Zhang, a first year Ph.D. in the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [MAD Lab].
 
-My research interests Human-Computer Interaction, specifically Text Entry, Input Method and User Interfaces, where I seek for better methods to make the input technology natural and seamless. 
+My research interests are in Human-Computer Interaction, specifically text entry, input methods, and interaction techniques, where I seek better methods to make technology natural and seamless. 
 
-Before moving to Seattle, I was a student of Computer Science & Technology in Tsinghua University, China, where I did a lot of explorations in research as well as industry. Back then, [Dr.Chun Yu] opened the world of HCI to me.
+Before moving to Seattle, I was a student of Computer Science & Technology in Tsinghua University, China, where I worked as a researcher as well as in industry. Back then, [Dr. Chun Yu] opened the world of HCI to me.
 
 I enjoy playing computer games in my spare time, but you know, I rarely have spare time :)
 <br><br>
@@ -33,7 +33,7 @@ I enjoy playing computer games in my spare time, but you know, I rarely have spa
 </div>
 
 
-[iSchool]: https://ischool.uw.edu/
+[Information School]: https://ischool.uw.edu/
 [Jacob O. Wobbrock]: http://faculty.washington.edu/wobbrock/
 [MAD Lab]: http://depts.washington.edu/madlab/index.html
-[Dr.Chun Yu]: https://www.researchgate.net/profile/Chun_Yu2
+[Dr. Chun Yu]: https://www.researchgate.net/profile/Chun_Yu2
