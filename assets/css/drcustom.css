@@ -1,0 +1,71 @@
+.dr-li ul {
+	margin-left: 1em;
+	margin-bottom: 0px;
+	font-size: 0.88em;
+}
+
+.dr-li {
+	list-style-type: none;
+}
+
+a {
+	color:#3498DB;
+}
+
+.ascii {
+	padding: 0;
+	margin: auto;
+	display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px 1em;
+	font-style: normal;
+    font-weight: normal;
+    font-family: "Droid Sans Mono", "Lucida Console", "Andale Mono", "Courier New", "Courier", monospace;
+    font-size: 12px;
+    line-height: 12px;
+	border: 0px;
+}
+
+.ascii-div {
+	clear: both;
+	margin: auto;
+}
+
+/*projects page*/
+.P-title {
+	font-family: 'Montserrat', 'Lucida Sans Unicode', 'Arial Black', sans-serif;
+}
+
+.P-subtitle {
+	font-family: 'Montserrat', 'Lucida Sans Unicode', 'Arial Black', sans-serif;
+	margin-top: 2em;
+}
+
+.P-page {
+	margin-bottom: 10%;
+	/*margin-left: -9%;*/
+	padding-right: 3%;
+	font-family : 'Raleway', Arial, sans-serif;
+	color: #565656;
+}
+
+.P-list {
+	font-weight: 600;
+	color: darkgray;
+}
+
+.P-galary {
+	margin-top: 1em;
+}
+
+.P-galary td {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.P-iframe {
+	margin: 0 auto;
+	display: block;
+}

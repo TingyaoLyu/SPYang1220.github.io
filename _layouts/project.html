@@ -1,0 +1,195 @@
+---
+layout: page
+---
+<head>
+	<style type="text/css">
+		#project {
+			clear: both;
+			margin-bottom: 10%;
+		}
+		
+		#project:before, #project:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		/*
+		#project #project_wrapper{
+			width: 110%;
+			margin-left: -13%;
+		}
+		*/		
+		#project #project_wrapper:nth-child(2n+1) {
+			clear: left;
+		}
+		
+		#project #project_wrapper .project_block {
+			cursor: pointer;
+			position: relative;
+			float: left;
+			margin-left: 3.9%;
+			margin-bottom: 3%;
+			width: 46%;
+		}
+		
+		#project #project_wrapper .project_block .project-image {
+			background: #eee;
+			margin-bottom: 3%;
+		}
+		
+		#project #project_wrapper .project_block .project_image .intrinsic {
+			padding-bottom: 300px;
+			line-height: 0;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.intrinsic .content_fill {
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		
+		.imgborder {
+		   display:inline-block;
+		   position:relative;
+		   border:3px solid #eee;
+		   padding:3px;
+		   background:#f2f2f2;
+		}
+		
+
+		.imgborder:before, .imgborder:after {
+		   z-index: -1;
+		   position: absolute;
+		   content: "";
+		   bottom: 10px;
+		   left: 10px;
+		   width: 50%;
+		   top: 80%;
+		   max-width:300px;
+		   background: #777;
+		   -webkit-box-shadow: 0 15px 10px #777;
+		   -moz-box-shadow: 0 15px 10px #777;
+		   box-shadow: 0 15px 10px #777;
+		   -webkit-transform: rotate(-3deg);
+		   -moz-transform: rotate(-3deg);
+		   -o-transform: rotate(-3deg);
+		   -ms-transform: rotate(-3deg);
+		   transform: rotate(-3deg);
+		}
+		.imgborder:after {
+		   -webkit-transform: rotate(3deg);
+		   -moz-transform: rotate(3deg);
+		   -o-transform: rotate(3deg);
+		   -ms-transform: rotate(3deg);
+		   transform: rotate(3deg);
+		   right: 10px;
+		   left: auto;
+		}
+		
+		#project #project_wrapper .project_block .project_title {
+			font-family: 'Montserrat', 'Lucida Sans Unicode', 'Arial Black', sans-serif;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: .06em;
+			text-align: center;
+			font-weight: 300;
+			font-style: normal;
+			color: #404040;
+		}
+	</style>
+</head>
+<!-- PROJECTS -->
+<div id = "project">
+<div id="project_wrapper">
+	<a class="project_block" href="emg.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../assets/img/portfolio/emg.png" style="top: 0px; height: 250px; position: relative;">
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="project_title">Shoulder Interaction Device</div>
+		</div>
+	</a>
+	<a class="project_block" href="fluxa.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../assets/img/portfolio/fluxa.jpg" style="top: 0px; height: 250px; position: relative;">
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="project_title">Fluxa</div>
+		</div>
+	</a>
+	<a class="project_block" href="parocam.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../assets/img/portfolio/parocam.png" style="top: 0px; height: 250px; position: relative;">
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="project_title">Parocam</div>
+		</div>
+	</a>
+	<a class="project_block" href="ATK.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../assets/img/portfolio/ATK.jpg" style="top: 0px; height: 250px; position: relative;">
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="project_title">ATK: Air Typing</div>
+		</div>
+	</a>
+	<a class="project_block" href="voicepp.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../assets/img/portfolio/voicepp.png" style="top: 0px; height: 250px; position: relative;">
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="project_title">VOICE++</div>
+		</div>
+	</a>
+	<a class="project_block" href="drraytracer.html">
+		<div>
+		<div class="project_image">
+			<div class="intrinsic">
+				<div class="content_fill">
+					<div class="imgborder">
+						<img src="../assets/img/portfolio/ray.jpeg" style="top: 0px; height: 250px; position: relative;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="project_title">DrRayTracer</div>
+		</div>
+	</a>
+</div>
+</div>
