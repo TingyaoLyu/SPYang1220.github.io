@@ -78,4 +78,4 @@ tags: [journey, personnal]
 不远万里来吹海风，也有点奢侈
 
 ![image]
-(/static/images/IMG_7480.jpg)
+(/assets/img/IMG_7480.jpg)

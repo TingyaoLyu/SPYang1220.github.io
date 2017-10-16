@@ -21,9 +21,9 @@ Canyonlands National Park 坐落在戈壁深处，整个公园的地貌像一圈
 
 不过夜晚的景色确实很美。第一天我们在路边的一所房子Airbnb借宿，就在山间的道路旁，出门是砂石，抬头是星空，半夜大概十度上下，风景宜人。
 
-![house](/static/images/pic2.jpg)
+![house](/assets/img/pic2.jpg)
 <p style="text-align: center;"><i>第一天的房子，矗立在空旷的路旁</i></p>
-![house](/static/images/pic1.jpg)
+![house](/assets/img/pic1.jpg)
 <p style="text-align: center;"><i>一张全景，我在想，什么时候我也要有一套这种房子，晚上繁星，早晨朝阳和新鲜的空气</i></p>
 
 头天晚上，抬头繁星漫天，就像自己身处在水晶球的中心，被天空包裹。说实话，我从没见过如此多的星星，也从没如此真切地看到它们“眨眼”——是真的“一闪一闪亮晶晶”。地上撒了一层银色，周遭是森林的静谧之声。同行的伙伴都拿出相机，曝光30秒拍出的绚烂夜空，就像我们到了北极一样。他们不时会惊呼一声“流星”！我顺着他们手指的方向看去，总是什么也没有发现。
@@ -33,20 +33,20 @@ Canyonlands National Park 坐落在戈壁深处，整个公园的地貌像一圈
 
 缩回头之后，心就提到了嗓子眼。恰好我坐在靠峡谷的一侧，车在前进的时候我能看到悬崖，每一次颠簸我都做好了跳车的准备。那个时候我在想，上周刚刚从险境逃出来，现在又主动跳进去。然后我就什么也想不到了。
 
-![house](/static/images/pic3.jpg)
+![house](/assets/img/pic3.jpg)
 <p style="text-align: center;"><i>白天我们沿途返回的时候，我在车上拍的一旁的悬崖。几乎看不到车轮下的路。</i></p>
 
 不过险路只是开始。车越往里开，路越野：纵然变了宽阔一些，但路面全是崎岖不平的沙石，我们开的是辆SUV，底盘低，遇到坑和凸石就得停下来，大家指挥车子往哪走，然后再往哪走。
 
-![house](/static/images/pic6.jpg)
+![house](/assets/img/pic6.jpg)
 <p style="text-align: center;"><i>我们的爱骑。格调并不是很搭。</i></p>
 
 那晚的路，总之是让我睡意全无。整个旅途全程由驾驶技巧最好的同学掌舵，事后他说，我也没想过会这么险。大家开玩笑说，如果活着出去，这一趟可以出去吹一辈子。
 最终我们还是到达了营地驻扎点，躺下来，整个人如散架一般，戈壁，星空，还是旷野的风，我都不记得了。
 
-![house](/static/images/pic4.jpg)
+![house](/assets/img/pic4.jpg)
 <p style="text-align: center;"><i>戈壁，戈壁，还是戈壁。</i></p>
-![house](/static/images/pic5.jpg)
+![house](/assets/img/pic5.jpg)
 <p style="text-align: center;"><i>当晚的营地。一个简陋的厕所，开阔的平地是搭帐篷的区域。</i></p>
 
 第二天我是被热醒的。太阳刚升起，戈壁滩并没有能够提供阴影的结构，于是我们的帐篷瞬间集聚了大量热气。我从里面走出来，确实被周围震撼到了。夜晚四周漆黑，并没能看到如此壮观的景象。
@@ -56,17 +56,17 @@ Canyonlands National Park 坐落在戈壁深处，整个公园的地貌像一圈
 
 那天下午我们从另一条公路开进了公园的另一边，这条路很有特色，沥青的路面，配上两边的风景，照出的相片如同水彩画。
 
-![house](/static/images/pic7.jpg)
+![house](/assets/img/pic7.jpg)
 <p style="text-align: center;"><i>路遇mini，很有感觉，偷偷借来拍。</i></p>
-![house](/static/images/pic10.jpg)
+![house](/assets/img/pic10.jpg)
 <p style="text-align: center;"><i>水彩大道</i></p>
-![house](/static/images/pic11.jpg)
+![house](/assets/img/pic11.jpg)
 <p style="text-align: center;"><i>第二日的营地</i></p>
 
 第三日是返程，夜晚终于住了房子，还是农民的房子，但装修十分高级，墙上挂着好多中国国画。
 一行人告别在丹佛。丹佛城市不大，四周是自然的风光，行驶在高速上，一种苍茫感袭来。
 
-![house](/static/images/pic12.jpg)
+![house](/assets/img/pic12.jpg)
 <p style="text-align: center;"><i>能看到的市中心只有前面一点高楼大厦</i></p>
 
 赶的是夜晚的飞机。中途转机在佛罗里达，心想以后有时间要来这里度假。
