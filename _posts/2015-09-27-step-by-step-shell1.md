@@ -17,11 +17,11 @@ tags: [programming, operating system]
 <li><a href="#a3">shell第三步：执行程序</a></li>
 <li><a href="#a4">shell第四步：信号处理</a></li>
 <li><a href="#a5">shell第五步：pipeline管道</a></li>
-<li><a href="#ax">shell番外步：让你的shell更像shell</a></li>
+<li><a href="#a6">shell番外步：让你的shell更像shell</a></li>
 
 下面，开始咯~
 
-<h3><a id=a0>shell第零步：写shell前需要知道什么</a></h3>
+<h3 id="a0"> shell第零步：写shell前需要知道什么 </h3>
 <p>是程序员一定都不会对shell感到陌生，哪怕你是一个windows程序员：）。通俗点来讲，shell就是一个解析输入命令并且执行其他程序的媒介，大家常用的GUI（图形界面），其实就是shell的漂亮包装。如果你不了解或不熟悉shell，请移步谷歌搜索</p>
 <p>shell版本有很多，例如mac平台上的terminal，就包含了好多shell:bash, zsh, ksh等等(terminal本身只是个程序，不是shell)， 我现在用的是fish，推荐一下，自动补全很强大，非常好用。</p>
 <p>怎么写一个shell呢？其实，一个简单地shell说白了就是几个方面：怎么处理输入？怎么调用程序？怎么利用操作系统特性调度程序？但每一方面都需要审慎的设计与考虑。</p>
@@ -31,7 +31,7 @@ tags: [programming, operating system]
 <ul><a href="http://www.gnu.org/software/libc/manual/html_node/">http://www.gnu.org/software/libc/manual/html_node/</a>介绍了glibC的具体实现，有很多有用的部分可以参考</ul>
 <ul>谷歌 神器不解释</ul>
 
-<h3><a id=a1>shell第一步：处理输入</a></h3>
+<h3 id="a1">shell第一步：处理输入</h3>
 <p>开始了！第一步是对输入字符串的处理。这一步最简单，但稍不留神就会留下很多陷阱，深处的bug甚至会殃及后面的很多步骤。所以要考虑周到所有情况。</p>
 <p>由于我们这里完成的是简易的shell，并不需要很复杂的处理功能。我们规定输入的语法为(单个命令)：
 <br>
@@ -72,7 +72,7 @@ tags: [programming, operating system]
 <p>到目前为止，一个初步的字符处理功能就完成了。</p>
 
 
-<h3><a id=a2>shell第二步：内部命令</a></h3>
+<h3 id="a2">shell第二步：内部命令</h3>
 处理完字符串后，我们需要知道具体要执行什么任务。这里我们讨论当输入为内部命令（即系统本身命令）的情况。介绍两个命令：exit, cd
 <p>有用的函数：``strcmp``用来比较字符串是否相同</p>
 <p>exit是终止的命令，程序接受这个命令后就会自动停止运行。因此这个功能的实现很简单，只需要比较输入是否与exit相等就好。但要注意，exit是没有参数的，也就是说如果上一步处理的字符串分隔后数量大于一，你的shell就不会退出，并且要给出相关错误提示。
@@ -93,7 +93,7 @@ tags: [programming, operating system]
     <span style='color:#806030; '>}</span>
 </pre>
 
-<h3><a id=a3>shell第三步：执行程序</a></h3>
+<h3 id="a3">shell第三步：执行程序</h3>
 这一步才是shell最重要的内容。试着在你的标准shell中输入ls,你就会发现它列出了文件夹下的所有文件与文件夹名称。输入ls -l就会附带文件的读写权限。如果你的当前文件夹下有一个叫做abc的程序，输入./abc，shell就会执行它。
 <p>这一步，关键的函数是exec*家族。关于他们的使用与区别，我建议大家看stackoverflow上的一个问题：<a href="http://stackoverflow.com/questions/5769734/what-are-the-different-versions-of-exec-used-for-in-c">What are the different versions of exec used for in C++?</a></p>
 这个家族的函数都是用来在程序中执行其他进程的，在执行成功后，不会返回当前程序，而是直接结束。因此为了不使我们的shell只执行一次就自动结束，我们需要创建一个新的进程给这个程序调用。这里涉及到了fork()的有关知识。
@@ -160,7 +160,7 @@ tags: [programming, operating system]
 没有用到execle。。。完全是纯手写
 
 
-<h3><a id=a4>shell第四步：信号处理</a></h3>
+<h3 id="a4">shell第四步：信号处理</h3>
 signal是操作系统的一个重要部分。编程的时候，我们处处与信号打交道（也许你不知道）：写一个等待输入的程序，当键盘按下的时候，就会向系统发送信号。
 <p>当然，这里我们说的信号更为特殊一点，你可以在<a href="https://en.wikipedia.org/wiki/Unix_signal">维基</a>看到所有的unix系统信号。当我们在控制台中输入Ctrl+C的时候，就是发送了一个SIGINT中断信号，如果有当前运行的程序，就会被中断退出。但你在系统shell中按这个组合键，在不运行任何程序的情况下，shell是不会自行关闭的，也就是说，它忽略了这个信号。你也可以输入exit，看一下结果的不同。</p>
 因此我们需要像系统shell那样，对这些信号进行处理，让它们不能“杀死”我们的shell程序。这里就用到了signal()函数，或者他的安全版本，sigaction()。这二者的用法可以参考它们的说明文档。在这里，我们选择对SIGINT,SIGQUIT,SITTER以及SIGTSTP进行处理，构建一个函数sighandler，对这些信号忽略:
@@ -182,7 +182,7 @@ signal是操作系统的一个重要部分。编程的时候，我们处处与�
 </pre>
 这样一来，再次运行的shell就不会被这些信号所打断。需要提醒的是，虽然父进程不会，但这些信号还是会被子进程捕获，所以在用我们的shell运行子进程的时候，那些组合键依然对他们有效。
 
-<h3><a id=a5>shell第五步：pipeline管道</a></h3>
+<h3 id="a5">shell第五步：pipeline管道</h3>
 <p>这是整个任务中最难理解的环节。准备好哦！</p>
 <p>首先我们搞清楚pipline(管道)是个什么概念。它在shell中以`|`符号表示。与重定向符号`< >`不同（它与重定向的工作原理也不同，具体可以参考<a href="https://en.wikipedia.org/wiki/Redirection_(computing)">wikipedia</a>或者<a href="http://www.ugrad.cs.ubc.ca/~cs219/CourseNotes/Unix/shell-redirect.html">redirection&pipline</a>， 里面有一个例子很生动：
 <pre style='color:#000000;background:#f1f0f0;'>For instance, typing<span style='color:#806030; '>:</span>
@@ -207,7 +207,7 @@ causes the standard output of command1 to <span style='color:#e60000; '>"flow th
 <p>所以，我们只需要用strtok()把所有用 `|`分隔开的命令一一放到子进程中去执行，同时修改描述符，就可以实现pipeline的效果！是不是很酷！</p>
 <p>尝试运行你的shell，执行一些常用操作，你会发现，除了补全功能，他真的更像一个shell了；）</p>
 
-<h3><a id=a5>shell番外步：让你的shell更像shell</a></h3>
+<h3 id="a6">shell番外步：让你的shell更像shell</h3>
 <p>啊哈！现在你已经实现了一个简单的shell，但是总觉得缺点了什么。没错，就是包装！作为热爱艺术的我，如此单调的界面怎么可以？</p>
 <p>我们注意到，正常的shell通常会在命令之前显示你的主机账户名，shell所处的当前目录，有的还有一些特殊符号，例如``$``。那么我们也来实现一下吧！</p>
 <ul>获得当前用户名：利用unistd.h中的函数：``int getlogin_r(char *buf, size_t bufsize);``</ul>
