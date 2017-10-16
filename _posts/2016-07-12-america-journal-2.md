@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-07-12 21:39:10 +0800
+date: 2016-07-12 21:39:10 
 title: 旅美日记2
 category: [posts]
 comments: true

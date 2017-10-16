@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-06-23 23:27:10 +0800
+date: 2016-06-23 23:27:10
 title: 旅美日记
 category: [posts]
 comments: true

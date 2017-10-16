@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-10-11 14:03:14 +0800
+date: 2015-10-11 14:03:14
 title: Computer Photography：Image Alignment
 category: [posts]
 comments: true

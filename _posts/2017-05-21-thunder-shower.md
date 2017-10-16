@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-05-21 01:30:10 +0800
+date: 2017-05-21 01:30:10 
 title: 雷阵雨
 category: [posts]
 comments: true

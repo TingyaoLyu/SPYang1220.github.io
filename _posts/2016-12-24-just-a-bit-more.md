@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-12-24 02:43:00 +0800
+date: 2016-12-24 02:43:00
 title: 再给我点时间
 category: [posts]
 comments: true

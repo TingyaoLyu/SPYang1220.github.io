@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-08-14 22:40:00 +0800
+date: 2016-08-14 22:40:00
 title: 旅美日记3
 category: [posts]
 comments: true
