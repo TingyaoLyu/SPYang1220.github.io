@@ -70,5 +70,6 @@ tags: [personnal]
 更幸运的是，你还有机会在这段变化中添上一笔。
 
 <br><br><br><br>
+<br><br><br><br>
 ![image](/assets/img/myroomates.jpg)
 室友全家福！（多了个老外）
