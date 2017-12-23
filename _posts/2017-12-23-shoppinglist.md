@@ -15,7 +15,7 @@ tags: [personnal]
 
 
 | CPU             | AMD RYZEN 7 1800X                | 310$    |
-|-----------------|----------------------------------|---------|
+| --------------- | -------------------------------- | ------- |
 | CPU FAN         | Coolermaster Liquid 120mm        | 40$     |
 | GPU             | MSI GeForce GTX 1080             | 450$    |
 | RAM             | CORSAIR Vengeance 16GB DDR4 3000 | 160$    |
