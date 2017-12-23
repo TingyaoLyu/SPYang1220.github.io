@@ -14,8 +14,9 @@ tags: [personnal]
 先说下配置
 
 
-| CPU             | AMD RYZEN 7 1800X                | 310$    |
+| Part            | Model                            | $$$$    |
 | --------------- | -------------------------------- | ------- |
+| CPU             | AMD RYZEN 7 1800X                | 310$    |
 | CPU FAN         | Coolermaster Liquid 120mm        | 40$     |
 | GPU             | MSI GeForce GTX 1080             | 450$    |
 | RAM             | CORSAIR Vengeance 16GB DDR4 3000 | 160$    |
