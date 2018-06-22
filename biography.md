@@ -7,7 +7,7 @@ order: 4
 ---
 中文简介请见下方。
 <h3>About me</h3>
-<p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan. 22 years old now. Currently I'm doing research on HCI in University of Washington, Seattle.</p>
+<p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan. 23 years old now. Currently I'm doing research on HCI in University of Washington, Seattle.</p>
 <p>I graduated from the Computer Science and Engineering department in Tsinghua University 2017. I was an exchange student in the Chinese University of Hong Kong, and was in Fluid Interface at MIT Media Lab as a visiting student.</p>
 
 <h5>Research</h5>
