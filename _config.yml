@@ -50,7 +50,7 @@ google_analytics:    UA-68428442-2
 disqus_shortname:    drustz
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2018. All rights reserved.'
+copyright:           '&copy; Mingrui Zhang. All rights reserved.'
 
 # Format of the permalinks
 permalink:           pretty
