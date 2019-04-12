@@ -7,6 +7,7 @@ layout: page
         table.row td{
             background-color: white !important;
             border: 0;
+            vertical-align: top;
         }
         li{
             list-style-type: none;
@@ -17,19 +18,47 @@ layout: page
             text-decoration: none;
             font-weight: bold;
         }
+        
+        @media (max-device-width: 768px) { 
+            .imgtd {
+                display: none;
+            }
+            img.smallthumbnail {
+                display: block;
+                margin-top: 5em;
+                margin-left: 10em;
+            }
+        }
+        
+        .imgtd {
+            width: 35%;
+        }
+        
+        img.smallthumbnail {
+            display: none;
+        }
+        
         img.thumbnail
         {
             margin-top: 15px;
             padding-left: 10px;
-            width: 330px;
             border-radius: 10px;
         }
+        
+        img.inline {
+            display: inline;
+            margin: 0;
+        }
+        
        .title {
             font-size: large;
             font-family: sans-serif;
         }
         .description{
             font-size: medium;
+        }
+        .detail{
+            font-size: small;
         }
     </style>
 </head>
@@ -38,7 +67,8 @@ layout: page
 <!-- <h2><strong>Publications</strong></h2> -->
 
     <table class="row">
-        <tr><td>
+        <img class="smallthumbnail" src="/assets/img/research/Throughput.png" alt="" >
+        <tr><td class="imgtd">
             <img class="thumbnail" src="/assets/img/research/Throughput.png" alt="" >
         </td>
         <td>
@@ -48,11 +78,12 @@ layout: page
                     <br>
                     The ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2019
                     <br>
-                    <font color="green" class="description">We define the text entry Throughput as a performance metric combining the speed and accuracy. Throughput is derived from the transmission ratio in the information theory. Unlike other metrics, throughput is less affected by speed-accuracy tradeoffs, thus it enables cross-device, cross-publication comparison.</font>
+                    <font color="green" class="detail">We define the text entry Throughput as a performance metric combining the speed and accuracy. Throughput is derived from the transmission ratio in the information theory. Unlike other metrics, throughput is less affected by speed-accuracy tradeoffs, thus it enables cross-device, cross-publication comparison.</font>
             </span></li>
         </div></td></tr>
         
-        <tr><td>
+        <img class="smallthumbnail" src="/assets/img/research/AAS.png" alt="" >
+        <tr><td class="imgtd">
             <img class="thumbnail" src="/assets/img/research/AAS.png" alt="" >
         </td>
         <td>
@@ -60,13 +91,14 @@ layout: page
             <li><span class="title"><a class="paper_link" href="" target="_blank">Anchored Audio Sampling: A Seamless Method for Exploring Children’s Thoughts During Deployment Studies </a></span>
                 <span class="description">Alexis Hiniker, Jon E. Froehlich, <strong>Mingrui Zhang</strong>, Erin Beneteau
                     <br>
-                    The ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2019 <img src="/assets/img/research/bestpaper.jpg"><i>Best Paper Award</i>
+                    The ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2019 <img class="inline" src="/assets/img/research/bestpaper.jpg"><i>Best Paper Award</i>
                     <br>
-                    <font color="green" class="description">We present Anchored Audio Smapling (AAS) method for collecting remote data of qualitative audio samples during field development with young children. The anchor event triggers the recording, and a sliding window surrounding this anchor captures both antecedent and ensuing recording. AAS ofers a developmentally sensitive way of understanding how children make sense of technology and situates their use in the larger context of daily life. <a href="https://github.com/uelab/KidsRecorder" target="_blank">Our AAS Library for Android</a></font>
+                    <font color="green" class="detail">We present Anchored Audio Smapling (AAS) method for collecting remote data of qualitative audio samples during field development with young children. The anchor event triggers the recording, and a sliding window surrounding this anchor captures both antecedent and ensuing recording. <a href="https://github.com/uelab/KidsRecorder" target="_blank">Our AAS Library for Android</a></font>
             </span></li>
         </div></td></tr>
         
-        <tr><td>
+        <img class="smallthumbnail" src="/assets/img/research/alexa.jpg" alt="" >
+        <tr><td class="imgtd">
             <img class="thumbnail" src="/assets/img/research/alexa.jpg" alt="" >
         </td>
         <td>
@@ -76,11 +108,12 @@ layout: page
                     <br>
                     The ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2019
                     <br>
-                    <font color="green" class="description"> We investigat different types of communication breakdowns and the repairing strategies between the conversation of family members and Alexa. Our findings indicates that improving technology’s ability to identify the communication partners and to provide specific clarification responses will ultimately improve the conversational interaction experience.</font>
+                    <font color="green" class="detail"> We investigat different types of communication breakdowns and the repairing strategies between the conversation of family members and Alexa. Our findings indicates that improving technology’s ability to identify the communication partners and to provide specific clarification responses will ultimately improve the conversational interaction experience.</font>
             </span></li>
         </div></td></tr>
         
-        <tr><td>
+        <img class="smallthumbnail" src="/assets/img/portfolio/ATK.jpg" alt="" >
+        <tr><td class="imgtd">
             <img class="thumbnail" src="/assets/img/portfolio/ATK.jpg" alt="" >
         </td>
         <td>
@@ -90,7 +123,7 @@ layout: page
                     <br>
                     The ACM Symposium on User Interface Software and Technology <strong>(UIST)</strong>, 2015
                     <br>
-                    <font color="green" class="description">A novel air-typing method, Leapmotion tracking fingers, improved Bayes prediction model with application developed</font>
+                    <font color="green" class="detail">A novel air-typing method, Leapmotion tracking fingers, improved Bayes prediction model with application developed</font>
             </span></li>
         </div></td></tr>
 
