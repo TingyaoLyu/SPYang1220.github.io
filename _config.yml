@@ -77,7 +77,7 @@ paginate_path:       '/page-:num/'
 # Uncomment this line if want to disable the touch drawer on mobile
 # disable_drawer: true
 
-
+future: ture
 
 # -----------------------------------------------------------------------------
 #  Collections
