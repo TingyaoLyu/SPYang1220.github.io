@@ -2,15 +2,14 @@
 layout: base
 ---
 
-{% assign category = site.featured_categories | where: "slug", page.slug | first %}
+{% assign posts = site.posts %}
+{% assign category = site.featured_categories | where: "slug", page.title | first %}
 {% if category %}
   {% assign posts = site.categories[page.slug] %}
 {% else %}
-  {% assign tag = site.featured_tags | where: "slug", page.slug | first %}
+  {% assign tag = site.featured_tags | where: "slug", page.title | first %}
   {% if tag %}
     {% assign posts = site.tags[page.slug] %}
-  {% else %}
-    {% assign posts = site.posts %}
   {% endif %}
 {% endif %}
 
@@ -23,13 +22,13 @@ layout: base
 {% endif %}
 
 {% for post in posts %}
-  {% assign currentdate = post.date | date: "%Y" %}
-  {% if currentdate != date %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+    <h2 id="y{{post.date | date: '%Y'}}" class="hr">{{ currentdate }}</h2>
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
   {% include post-list-item.html post=post format="%d %b" %}
-  {% if forloop.last %}</ul>{% endif %}
+{% if forloop.last %}</ul>{% endif %}
 {% endfor %}

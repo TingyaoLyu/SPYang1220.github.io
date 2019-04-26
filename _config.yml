@@ -56,7 +56,7 @@ copyright:           '&copy; Mingrui Zhang. All rights reserved.'
 permalink:           pretty
 
 # Pagination configuration (used by the `blog` layout)
-paginate:            5
+paginate:            10
 paginate_path:       '/page-:num/'
 
 # If you are upgrading form a v5 verison of Hydejack, uncomment the two lines below,
@@ -98,11 +98,12 @@ collections:
 #  Advanced configuration
 # -----------------------------------------------------------------------------
 
-gems:
+plugins:
   - jekyll-default-layout
   - jekyll-feed
   - jekyll-optional-front-matter
   - jekyll-paginate
+  # - jekyll-paginate-v2
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-sitemap

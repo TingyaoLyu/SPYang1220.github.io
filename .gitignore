@@ -8,3 +8,5 @@ robots.txt
 .bundle
 bin
 .vagrant
+vendor
+.sass-cache
