@@ -7,7 +7,9 @@ comments: true
 ---
 
 This is a blog post of our CHI 19 paper, *Text Entry Throughput: Towards Unifying Speed and Accuracy  
-in a Single Performance Metric*. It was conducted by me, [Shumin Zhai](https://www.shuminzhai.com/), and [Jacob O. Wobbrock](https://faculty.washington.edu/wobbrock/). [Part 1 link]()
+in a Single Performance Metric*. It was conducted by me, [Shumin Zhai](https://www.shuminzhai.com/), and [Jacob O. Wobbrock](https://faculty.washington.edu/wobbrock/). 
+
+[Part 1 link](https://drustz.com/posts/2019/04/28/Throughput1/)
 
 Alright, time to introduce the practical issues of text entry throughput we calculated so far.
 
@@ -51,7 +53,7 @@ The tricky part lies in the score rules. From EA to EF, we decreased the score f
 This makes sure that people will adjust their SA strategy to gain higher scores in different SA conditions. Sounds fun, huh?
 
 <p align="center">
-  <img src="/assets/img/throughput_texttest.png">
+  <img width="450px" src="/assets/img/throughput_texttest.png">
 </p>
 
 > The TextTest++ interface. The timer is on the left; the condition selector and total score are on the right. After typing in the middle text area, participants could hit the ENTER key or “Next” button to go to the next phrase. (b) Indicators shown after finishing each phrase corresponding to the score increasing, no change, or decreasing, respectively.

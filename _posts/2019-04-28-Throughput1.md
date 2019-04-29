@@ -9,6 +9,8 @@ comments: true
 This is a blog post of our CHI 19 paper, *Text Entry Throughput: Towards Unifying Speed and Accuracy  
 in a Single Performance Metric*. It was conducted by me, [Shumin Zhai](https://www.shuminzhai.com/), and [Jacob O. Wobbrock](https://faculty.washington.edu/wobbrock/). 
 
+[Part 2 link](https://drustz.com/posts/2019/04/29/Throughput2/)
+
 Do you know how well you type? In text entry studies, researchers currently use two metrics to evaluate a text entry performance: the speed and the accuracy. Speed is usually measured by Word Per Minute (WPM), and the accuracy is usually measured by the error rates. 
 
 ## Problem Emerges
