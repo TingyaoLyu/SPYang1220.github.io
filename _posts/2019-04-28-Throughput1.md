@@ -13,10 +13,10 @@ Do you know how well you type? In text entry studies, researchers currently use 
 
 ## Problem Emerges
 However, using two metrics to evaluate the performance might cause problems. For example, Ray is typing with the same keyboard. If Ray is in a hurry, he might type faster with making a lot of errors; or if he types carefully, he might type slowly and accurately. The example is shown in the following table. 
-|                |Speed         |Error rate   |
-|----------------|--------------|--------------------|
-|Type in a hurry |50 WPM        | 0.1 |
-|Type carefully  |30 WPM        |0.01|
+|                | Speed         | Error rate   |
+| -------------- | ------------- | ------------ |
+| Type in a hurry | 50 WPM       | 0.1  |
+| Type carefully  | 30 WPM       | 0.01 |
 
 Then how do we measure the performance of Ray and the keyboard with the two speed-accuracy conditions? Can we draw a firm conclusion on that? More importantly, can we overcome the effect of speed-accuracy tradeoffs?
 
@@ -38,7 +38,7 @@ In a text entry study, a string (which is called the presented string, P) is sho
 
 The information being transmitted in a text entry process is discrete, because we are typing character by character. Shannon called the channel in this kind of system "the discrete channel with noise". And fortunately, he has a concrete example on how to calculate the information transmission rate (the throughput) of the channel. Let's have a look:
 <p align="center">
-  <img width="300" src="/assets/img/throughput_example.png">
+  <img width="300px" src="/assets/img/throughput_example.png">
 </p>
 
 In the image above, there is a information source X, which is sending symbols 0 and 1 with equal probability 0.5, at a rate of 1000 symbols per second to the destination Y. During the transmission, because of the noise in the channel, there is an error rate 0.01 which means 1 out of 100 symbols is sent errorly into the other one. What is the information transmission rate (throughput) of the channel?
@@ -71,7 +71,7 @@ Thus if we have P(x), P(x, y) and P(x|y), we can get the throughput of the chann
 
 Thus if we get the P(y|x) and P(x), we can get the throughput. In the text entry process, P(x) represents the probability of character x appearing in the presented string P (in other words, the charcter distribution of P). P(y|x) represents the transmission probability of typing character x into y.
 <p align="center">
-  <img src="/assets/img/throughput_charactertransmit.png">
+  <img width="400px" src="/assets/img/throughput_charactertransmit.png">
 </p>
 
 ### The Null Character
@@ -80,9 +80,9 @@ But wait a second. The above calculate is perfect suitable when there is only su
 Well, the solution in the paper is to introduce a null character Ø. Ø is only a placeholder character to represent the omission and insertion errors. Thus the omission error becomes Ø is typed into another character, and the insertion error becomes one character is typed into Ø. 
 
 <p align="center">
-  <img src="/assets/img/throughput_charactertransmitnull.png">
+  <img width="400px" src="/assets/img/throughput_charactertransmitnull.png">
 </p>
 
-In this way, we can get all probabilities of p(x) and p(y|x). Problem solved! And we get the throughput for text entry. 
+In this way, we can get all probabilities of p(x) and p(y\|x). Problem solved! And we get the throughput for text entry. 
 
 However, the throughput now is still not ready for use. It is facing two practical issues. We will continue discussing in the next post. Or you can refer to the paper for full explanation.
