@@ -34,11 +34,11 @@ In theory, to calculate the throughput, we have to get the probability of typing
 
 Even we can get all instances, it does not mean that the distribution of each instance matches the ideal transmission distribution, which requires even more data to approach. Thus our practical solution is to use the overall probability to represent each instance's probability. For example, use the overall substitution probability to represent each substitution instances:
 
-> P('b'|'a') = P('c'|'a') = ... = P(substitution)
+> P('b'\|'a') = P('c'\|'a') = ... = P(substitution)
 
 Use the overall omission/insertion/typing correctly probability in the same way.
 
-> P('a'|'a') = P('b'|'b') = ... = P(typing correctly)
+> P('a'\|'a') = P('b'\|'b') = ... = P(typing correctly)
 
 
 The downside of using practical solutions is that the throughput gained this way is no longer a theoretically justified measure. However, we have to make a trade-off between usability and theory. Let's see how it performs in real settings!
