@@ -6,8 +6,8 @@ category: [posts]
 comments: true
 ---
 
-This is a blog post of my CHI 19 paper, *Text Entry Throughput: Towards Unifying Speed and Accuracy  
-in a Single Performance Metric*.
+This is a blog post of our CHI 19 paper, *Text Entry Throughput: Towards Unifying Speed and Accuracy  
+in a Single Performance Metric*. It was conducted by me, [Shumin Zhai](https://www.shuminzhai.com/), and [Jacob O. Wobbrock](https://faculty.washington.edu/wobbrock/). 
 
 Do you know how well you type? In text entry studies, researchers currently use two metrics to evaluate a text entry performance: the speed and the accuracy. Speed is usually measured by Word Per Minute (WPM), and the accuracy is usually measured by the error rates. 
 
@@ -35,7 +35,7 @@ Then how do we measure the performance of Ray and the keyboard with the two spee
 
 In this paper, we present a metric called text entry throughput. It evaluates the overall text entry performance, and is stable across different speed-accuracy conditions. It measures the information being transmitted through the process based on the information theory.
 
-So how does it works? Well, to understand it, let's first have a look at the communication system in the Shannon's famouse paper of information theory, [A Mathematical Theory of Communication](http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf). It illustrates that the information generated from the source, received by the destination, and transmitted through the channel. Here the transmitter and the receiver play the role of encoding and decoding.
+So how does it works? Well, to understand it, let's first have a look at the communication system in the Shannon's famous paper of information theory, [A Mathematical Theory of Communication](http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf). It illustrates that the information generated from the source, received by the destination, and transmitted through the channel. Here the transmitter and the receiver play the role of encoding and decoding.
 
 <p align="center">
   <img width="700px" src="/assets/img/throughput_system.png">
