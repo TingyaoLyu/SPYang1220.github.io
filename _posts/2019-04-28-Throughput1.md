@@ -38,7 +38,7 @@ In a text entry study, a string (which is called the presented string, P) is sho
 
 The information being transmitted in a text entry process is discrete, because we are typing character by character. Shannon called the channel in this kind of system "the discrete channel with noise". And fortunately, he has a concrete example on how to calculate the information transmission rate (the throughput) of the channel. Let's have a look:
 <p align="center">
-  <img src="/assets/img/throughput_example.png">
+  <img width="300" src="/assets/img/throughput_example.png">
 </p>
 
 In the image above, there is a information source X, which is sending symbols 0 and 1 with equal probability 0.5, at a rate of 1000 symbols per second to the destination Y. During the transmission, because of the noise in the channel, there is an error rate 0.01 which means 1 out of 100 symbols is sent errorly into the other one. What is the information transmission rate (throughput) of the channel?
