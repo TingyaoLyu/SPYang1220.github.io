@@ -37,7 +37,7 @@ tags: [programming, computer vision]
 	</ul>
 	<ul><h4>高斯金字塔</h4>
 		<p>这里我们介绍一个得力助手：高斯金字塔。<a href="http://docs.opencv.org/doc/tutorials/imgproc/pyramids/pyramids.html" target="_blank">Opencv</a>对其有官方讲解。它的结构是这样的：</p>
-		<br ><img src="http://docs.opencv.org/_images/Pyramids_Tutorial_Pyramid_Theory.png" style="display: block; margin-left: auto; margin-right: auto;"/><br> 
+		<br ><img src="https://docs.opencv.org/2.4/_images/Pyramids_Tutorial_Pyramid_Theory.png" style="display: block; margin-left: auto; margin-right: auto;"/><br> 
 		<p>所以，这个金字塔帮我们做的，就是不断减小图片的规模。具体做法是先高斯平滑，然后去偶数行和偶数列生成下一层，这样一来，每一子层的大小是其父层的1/4。你可以设定最高层的大小，30*30或者16*16就好。即便20000*20000分辨率的图片，也不过只有8,9层。这样一来，我们可以先在最小层上找到最佳匹配点的估计，然后慢慢扩大，逐步逼近，这样就会节省大量的时间。</p>
 		<p>具体做法是，在较顶层的时候，我们用较大的搜索范围来搜索最佳匹配点，这样不会浪费多少时间。而且因为高层的图片较小、模糊，所以哪怕全面搜索也是值得的（因为匹配不是很精确）。但随着层次下降，我们就需要相应地减少搜索范围。由于已经知道了上一层的最佳点(x,y)，那么对于当前层，上一层的(x,y)对应这一层的(2x,2y)（根据建立金字塔的规则）。而在金字塔建立的过程中，每四个像素会舍去三个像素，也就是说，上一层最佳匹配点周围会有8个像素是被抛弃的(下图中白格子是下一层被保留的像素，深蓝色是被抛弃的像素,每个白格子周围有8个蓝格子):</p>
 		<img src="http://fc.topitme.com/c/d0/7c/114458478336a7cd0cl.jpg" alt="tower" height="200" width="200" style="display: block; margin-left: auto; margin-right: auto"><br>
