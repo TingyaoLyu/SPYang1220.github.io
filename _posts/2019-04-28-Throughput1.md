@@ -13,10 +13,23 @@ Do you know how well you type? In text entry studies, researchers currently use 
 
 ## Problem Emerges
 However, using two metrics to evaluate the performance might cause problems. For example, Ray is typing with the same keyboard. If Ray is in a hurry, he might type faster with making a lot of errors; or if he types carefully, he might type slowly and accurately. The example is shown in the following table. 
-|                | Speed         | Error rate   |
-| -------------- | ------------- | ------------ |
-| Type in a hurry | 50 WPM       | 0.1  |
-| Type carefully  | 30 WPM       | 0.01 |
+<table>
+  <tr>
+    <th></th>
+    <th>Speed</th>
+    <th>Error rate</th>
+  </tr>
+  <tr>
+    <td>Type in a hurry</td>
+    <td>50 WPM</td>
+    <td>0.1</td>
+  </tr>
+  <tr>
+    <td>Type carefully</td>
+    <td>30 WPM</td>
+    <td>0.01</td>
+  </tr>
+</table>
 
 Then how do we measure the performance of Ray and the keyboard with the two speed-accuracy conditions? Can we draw a firm conclusion on that? More importantly, can we overcome the effect of speed-accuracy tradeoffs?
 
@@ -56,7 +69,6 @@ The correct way is to first calculate the [mutual information](https://en.wikipe
 Shannon provides the formular to calculate the mutual information as   <img src="/assets/img/throughput_mutual.png">
 
 and also, The way to calculate H(X) and H(X\|Y) is
-[https://wikimedia.org/api/rest_v1/media/math/render/svg/971ffd75b32f284123036d4ae8fc3dd6e377e030]()
 <p align="center">
   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/971ffd75b32f284123036d4ae8fc3dd6e377e030">
 </p>
