@@ -25,12 +25,12 @@ In this paper, we present a metric called text entry throughput. It evaluates th
 So how does it works? Well, to understand it, let's first have a look at the communication system in the Shannon's famouse paper of information theory, [A Mathematical Theory of Communication](http://math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf). It illustrates that the information generated from the source, received by the destination, and transmitted through the channel. Here the transmitter and the receiver play the role of encoding and decoding.
 
 <p align="center">
-  <img src="/assets/img/throughput_system.png">
+  <img width="700px" src="/assets/img/throughput_system.png">
 </p>
 
 In a text entry study, a string (which is called the presented string, P) is shown to you, and you transcribe it using the input method. The final string you typed is called the transcribed string (T). Thus if we think about it, the text entry process is exactly an example of information transmission process. We can map each part to the diagram: P is the source, T is the destination, and human + text entry method together is the middle part, transmitting information from P to T. During the typing, errors might happen, thus noises are introduced. 
 <p align="center">
-  <img src="/assets/img/throughput_mappingsystem.png">
+  <img width="700px" src="/assets/img/throughput_mappingsystem.png">
 </p>
 
 
@@ -55,7 +55,7 @@ The correct way is to first calculate the [mutual information](https://en.wikipe
 
 Shannon provides the formular to calculate the mutual information as   <img src="/assets/img/throughput_mutual.png">
 
-and also, The way to calculate H(X) and H(X|Y) is
+and also, The way to calculate H(X) and H(X\|Y) is
 [https://wikimedia.org/api/rest_v1/media/math/render/svg/971ffd75b32f284123036d4ae8fc3dd6e377e030]()
 <p align="center">
   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/971ffd75b32f284123036d4ae8fc3dd6e377e030">
@@ -64,12 +64,12 @@ and also, The way to calculate H(X) and H(X|Y) is
 <img src="/assets/img/throughput_hxy.png">
 </p>
 
-Thus if we have P(x), P(x, y) and P(x|y), we can get the throughput of the channel. Also P(x, y) = P(x)P(y|x), and 
+Thus if we have P(x), P(x, y) and P(x\|y), we can get the throughput of the channel. Also P(x, y) = P(x)P(y\|x), and 
 <p align="center">
   <img src="/assets/img/throughput_pxy.png">
 </p>
 
-Thus if we get the P(y|x) and P(x), we can get the throughput. In the text entry process, P(x) represents the probability of character x appearing in the presented string P (in other words, the charcter distribution of P). P(y|x) represents the transmission probability of typing character x into y.
+Thus if we get the P(y\|x) and P(x), we can get the throughput. In the text entry process, P(x) represents the probability of character x appearing in the presented string P (in other words, the charcter distribution of P). P(y\|x) represents the transmission probability of typing character x into y.
 <p align="center">
   <img width="400px" src="/assets/img/throughput_charactertransmit.png">
 </p>
