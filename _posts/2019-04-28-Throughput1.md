@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2019-04-28 23:56:10 
-title: Evaluating text entry on the information level using throughput: Part 1
+title: "Evaluating text entry on the information level using throughput: Part 1"
 category: [posts]
 comments: true
 ---
