@@ -43,7 +43,7 @@ So how does it works? Well, to understand it, let's first have a look at the com
   <img width="700px" src="/assets/img/throughput_system.png">
 </p>
 
-In a text entry study, a string (which is called the presented string, P) is shown to you, and you transcribe it using the input method. The final string you typed is called the transcribed string (T). Thus if we think about it, the text entry process is exactly an example of information transmission process. We can map each part to the diagram: P is the source, T is the destination, and human + text entry method together is the middle part, transmitting information from P to T. During the typing, errors might happen, thus noises are introduced. 
+In a text entry study, a string (which is called the presented string, P) is shown to you, and you transcribe it using the input method. The final string you typed is called the transcribed string (T). Thus if we think about it, the text entry process is exactly an example of the information transmission process. We can map each part to the diagram: P is the source, T is the destination, and human + text entry method together is the middle part, transmitting information from P to T. During the typing, errors might happen, thus noises are introduced. 
 <p align="center">
   <img width="700px" src="/assets/img/throughput_mappingsystem.png">
 </p>
@@ -56,19 +56,19 @@ The information being transmitted in a text entry process is discrete, because w
   <img width="300px" src="/assets/img/throughput_example.png">
 </p>
 
-In the image above, there is a information source X, which is sending symbols 0 and 1 with equal probability 0.5, at a rate of 1000 symbols per second to the destination Y. During the transmission, because of the noise in the channel, there is an error rate 0.01 which means 1 out of 100 symbols is sent errorly into the other one. What is the information transmission rate (throughput) of the channel?
+In the image above, there is an information source X, which is sending symbols 0 and 1 with equal probability 0.5, at a rate of 1000 symbols per second to the destination Y. During the transmission, because of the noise in the channel, there is an error rate 0.01 which means 1 out of 100 symbols is sent errorly into the other one. What is the information transmission rate (throughput) of the channel?
 
 
 The first guess might be 990 bits/sec. Because the source information H(x) = -0.5 log2(0.5)-0.5 log2(0.5) = 1 (the information here is also called the entropy. You can find how to calculate it [here](https://en.wikipedia.org/wiki/Information_theory#Entropy_of_an_information_source)). The information being transmitted is thus 1000 bits/sec. With the error rate, it will be 1000 x 0.99 = 990 bits/sec. However, the error rate only tells us about the quantity of errors, not the position. For example, if we received a thousand 1 symbols, even we know that there might be a 0,  we do not know where it is. In other words, 990 bits/sec is more than the real information being transmitted, because we lack the location information. 
 
 
-The correct way is to first calculate the [mutual information](https://en.wikipedia.org/wiki/Mutual_information). If we look at the image below, the pink circle represents the information of X, the blue circle represents the information of Y, then the intersection part of the two circle is the mutual information (I(X; Y)) of X and Y. It represents the amount of information that both X and Y has. The part of information that X has but Y doesn't is represented as H(X\|Y) (or Hy(X) in the paper).
+The correct way is to first calculate the [mutual information](https://en.wikipedia.org/wiki/Mutual_information). If we look at the image below, the pink circle represents the information of X, the blue circle represents the information of Y, then the intersection part of the two circles is the mutual information (I(X; Y)) of X and Y. It represents the amount of information that both X and Y have. The part of the information that X has but Y doesn't is represented as H(X\|Y) (or Hy(X) in the paper).
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Entropy-mutual-information-relative-entropy-relation-diagram.svg/384px-Entropy-mutual-information-relative-entropy-relation-diagram.svg.png">
 </p>
 
-Shannon provides the formular to calculate the mutual information as   <img src="/assets/img/throughput_mutual.png">
+Shannon provides the formula to calculate the mutual information as   <img src="/assets/img/throughput_mutual.png">
 
 and also, The way to calculate H(X) and H(X\|Y) is
 <p align="center">
@@ -83,13 +83,13 @@ Thus if we have P(x), P(x, y) and P(x\|y), we can get the throughput of the chan
   <img src="/assets/img/throughput_pxy.png">
 </p>
 
-Thus if we get the P(y\|x) and P(x), we can get the throughput. In the text entry process, P(x) represents the probability of character x appearing in the presented string P (in other words, the charcter distribution of P). P(y\|x) represents the transmission probability of typing character x into y.
+Thus if we get the P(y\|x) and P(x), we can get the throughput. In the text entry process, P(x) represents the probability of character x appearing in the presented string P (in other words, the character distribution of P). P(y\|x) represents the transmission probability of typing character x into y.
 <p align="center">
   <img width="400px" src="/assets/img/throughput_charactertransmit.png">
 </p>
 
 ### The Null Character
-But wait a second. The above calculate is perfect suitable when there is only substitution errors (typing a charcter into another one). However, there is also omission errors, where characters are mysteriously omitted (like typing "abc" into "ac"); and insertion errors, where characters are mysteriously inserted (like typing "ac" into "abc"). In both error types, the text length of the source (P) and the destination (T) are different. Thus we cannot calculate P(x, y), because there is either no x, or no y. How do we cope with the problem?
+But wait a second. The above calculate is perfectly suitable when there are only substitution errors (typing a character into another one). However, there is also omission errors, where characters are mysteriously omitted (like typing "abc" into "ac"); and insertion errors, where characters are mysteriously inserted (like typing "ac" into "abc"). In both error types, the text length of the source (P) and the destination (T) are different. Thus we cannot calculate P(x, y), because there is either no x, or no y. How do we cope with the problem?
 
 Well, the solution in the paper is to introduce a null character Ø. Ø is only a placeholder character to represent the omission and insertion errors. Thus the omission error becomes Ø is typed into another character, and the insertion error becomes one character is typed into Ø. 
 
@@ -99,4 +99,4 @@ Well, the solution in the paper is to introduce a null character Ø. Ø is only 
 
 In this way, we can get all probabilities of p(x) and p(y\|x). Problem solved! And we get the throughput for text entry. 
 
-However, the throughput now is still not ready for use. It is facing two practical issues. We will continue discussing in the next post. Or you can refer to the paper for full explanation.
+However, the throughput now is still not ready for use. It is facing two practical issues. We will continue discussing in the next post. Or you can refer to the paper for a full explanation.
