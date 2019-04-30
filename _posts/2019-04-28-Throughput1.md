@@ -100,3 +100,6 @@ Well, the solution in the paper is to introduce a null character Ø. Ø is only 
 In this way, we can get all probabilities of p(x) and p(y\|x). Problem solved! And we get the throughput for text entry. 
 
 However, the throughput now is still not ready for use. It is facing two practical issues. We will continue discussing in the next post. Or you can refer to the paper for a full explanation.
+
+---
+For your convenience, we open-sourced our text study interface TextTest++ [here](https://drustz.com/TextTestPP/) at GitHub, and also our algorithm for calculating the throughput [here](https://github.com/DrustZ/Throughput). Enjoy!

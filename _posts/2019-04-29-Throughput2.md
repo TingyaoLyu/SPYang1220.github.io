@@ -79,4 +79,5 @@ In my mind, throughput to text entry is like Fitts' law to pointing. They both m
 
 Our hope is that throughput will be calculated and reported to support comparisons across devices, text entry methods, and participants. The advantageous properties of throughput and the theoretical derivation from information theory make it suitable as a performance-level metric. 
 
-For your convenience, we open-sourced our text study interface TextTest++ [here](https://github.com/DrustZ) at GitHub, and also our algorithm for calculating the throughput [here](https://github.com/DrustZ/Throughput). Enjoy!
+---
+For your convenience, we open-sourced our text study interface TextTest++ [here](https://drustz.com/TextTestPP/) at GitHub, and also our algorithm for calculating the throughput [here](https://github.com/DrustZ/Throughput). Enjoy!
