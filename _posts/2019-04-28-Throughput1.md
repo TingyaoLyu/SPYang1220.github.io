@@ -6,8 +6,8 @@ category: [posts]
 comments: true
 ---
 
-This is a blog post of our CHI 19 paper, *Text Entry Throughput: Towards Unifying Speed and Accuracy  
-in a Single Performance Metric*. It was conducted by me, [Shumin Zhai](https://www.shuminzhai.com/), and [Jacob O. Wobbrock](https://faculty.washington.edu/wobbrock/). 
+This is a blog post of our CHI 19 paper, [*Text Entry Throughput: Towards Unifying Speed and Accuracy  
+in a Single Performance Metric*](https://dl.acm.org/citation.cfm?doid=3290605.3300866). It was conducted by me, [Shumin Zhai](https://www.shuminzhai.com/), and [Jacob O. Wobbrock](https://faculty.washington.edu/wobbrock/). 
 
 [Part 2 link](https://drustz.com/posts/2019/04/29/Throughput2/)
 
