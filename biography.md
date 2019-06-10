@@ -66,6 +66,7 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 6-year-old p
 <p>16年春夏我在 Mailtime 担任iOS实习生。</p>
 <p>我曾创业。工作团队是北京栗子工作室，由清华美院学长王鑫带领。目前作品为iOS端的“有劲相机”，现已退出</p>
 <p>16冬至17夏在Momenta.ai，一家研究自动驾驶的公司实习。</p>
+<p>19年夏在Google Research。</p>
 <p>未来会考虑成立公司。</p>
 </ul>
 
@@ -81,7 +82,7 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 6-year-old p
 <p>我的室友，@温和，一个技术宅。</p>
 <p>四人帮：我，刘一方，刘豫群, 张一鸣以及暴宇翔。</p>
 <p>我的三位大学室友：温和，蒋文明，钱迪晨。</p>
-<p>我的两位PhD室友：张一鸣，王钦。</p>
+<p>我的PhD室友：张一鸣，王钦，<a href="https://students.washington.edu/yliu814/wordpress/blog/">刘宇赢</a>。</p>
 </ul>
 
 <h5>我的父母</h5>
