@@ -12,7 +12,7 @@ order: 4
 
 <h5>Research</h5>
 <ul>
-<p>I love Human-Computer Interaction, and I also researched in Machine Learning. Now I'm doing research on Text Entry and Interfaces with Prof.Jacob O. Wobbrock in MAD Lab.</p>
+<p>I love Human-Computer Interaction, and I also researched in Machine Learning. Now I'm doing research on Text Entry and Interfaces with Prof.Jacob O. Wobbrock in iLab.</p>
 
 <p>I once worked in the HCI Lab of Tsinghua and Multimedia Lab of CUHK.</p>
 <p>2016 Summer I was in MIT Media Lab.</p>
@@ -53,7 +53,7 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 6-year-old p
 <h5>科研</h5>
 <ul>
 <p>对人机交互十分热爱,尤其是输入方式（触屏输入）以及如何更加自然地与设备交互。</p>
-<p>目前我在MAD实验室，与Jacob O. Wobbrock教授一同研究输入评估模型相关的研究。</p>
+<p>目前我在iLab实验室，与Jacob O. Wobbrock教授一同研究输入评估模型相关的研究。</p>
 <p>我从大二开始在清华大学人机交互实验室，参与空中打字项目研究。</p>
 <p>大二暑期在香港中文大学多媒体实验室，接触图像识别与深度学习。</p>
 <p>大三暑期在麻省理工学院Media Lab。</p>
