@@ -3,7 +3,7 @@ layout: about
 title: Home
 ---
 
-Greetings! I'm Mingrui Zhang, a second year Ph.D. in the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [iLab].
+Greetings! I'm Mingrui Zhang, a second year Ph.D. in the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
 
 My research interests are in Human-Computer Interaction, specifically text entry, input methods, and interaction techniques, where I seek better methods to make technology natural and seamless. 
 
@@ -35,5 +35,5 @@ I enjoy playing computer games in my spare time, but you know, I rarely have spa
 
 [Information School]: https://ischool.uw.edu/
 [Jacob O. Wobbrock]: http://faculty.washington.edu/wobbrock/
-[iLab]: http://depts.washington.edu/iLab/index.html
+[ACE Lab]: http://depts.washington.edu/acelab/
 [Dr. Chun Yu]: http://pi.cs.tsinghua.edu.cn/lab/people/ChunYu/
