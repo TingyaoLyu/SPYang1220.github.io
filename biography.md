@@ -12,7 +12,7 @@ order: 4
 
 <h5>Research</h5>
 <ul>
-<p>I love Human-Computer Interaction, and I also researched in Machine Learning. Now I'm doing research on Text Entry and Interfaces with Prof.Jacob O. Wobbrock in iLab.</p>
+<p>I love Human-Computer Interaction, and I also researched in Machine Learning. Now I'm doing research on Text Entry and Interfaces with Prof.Jacob O. Wobbrock in ACE Lab.</p>
 
 <p>I once worked in the HCI Lab of Tsinghua and Multimedia Lab of CUHK.</p>
 <p>2016 Summer I was in MIT Media Lab.</p>
