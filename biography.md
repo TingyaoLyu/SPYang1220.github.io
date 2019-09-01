@@ -12,7 +12,7 @@ order: 4
 
 <h5>Research</h5>
 <ul>
-<p>I love Human-Computer Interaction, and I also researched in Machine Learning. Now I'm doing research on Text Entry and Interfaces with Prof.Jacob O. Wobbrock in ACE Lab.</p>
+<p>I love Human-Computer Interaction, and I also researched in Machine Learning. Now I'm doing research on Text Entry and Interfaces with Prof.Jacob O. Wobbrock at ACE Lab.</p>
 
 <p>I once worked in the HCI Lab of Tsinghua and Multimedia Lab of CUHK.</p>
 <p>2016 Summer I was in MIT Media Lab.</p>
@@ -21,12 +21,13 @@ order: 4
 
 <h5>Enteprise</h5>
 <ul>
-<p>I was a co-founder of LEEZEE Inc., Beijing.</p>
-<p>I worked in <a href="https://mailtime.com/" target="_blank">Mailtime</a> as an iOS intern.</p>
+<p>Currently I'm interning at Google in the Android team on improving the keyboard experience.</p>
 <p>I worked in <a href="https://momenta.ai" target="_blank">Momenta.ai</a> as a research intern on Freespace Detection</p>
+<p>I worked in <a href="https://mailtime.com/" target="_blank">Mailtime</a> as an iOS intern.</p>
+<p>I was a co-founder of LEEZEE Inc., Beijing.</p>
 </ul>
 
-<h5>Lifes</h5>
+<h5>Life</h5>
 <ul>
 <p>I love biking. I cycled from Chengdu, Sichuan to Tibet in the summer of 2013.</p>
 <p>Sing songs, and play guitar (almost forget!).</p>
@@ -53,7 +54,7 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 6-year-old p
 <h5>科研</h5>
 <ul>
 <p>对人机交互十分热爱,尤其是输入方式（触屏输入）以及如何更加自然地与设备交互。</p>
-<p>目前我在iLab实验室，与Jacob O. Wobbrock教授一同研究输入评估模型相关的研究。</p>
+<p>目前我在ACE Lab实验室，与Jacob O. Wobbrock教授一同研究输入评估模型以及智能文字输入技术的研究。</p>
 <p>我从大二开始在清华大学人机交互实验室，参与空中打字项目研究。</p>
 <p>大二暑期在香港中文大学多媒体实验室，接触图像识别与深度学习。</p>
 <p>大三暑期在麻省理工学院Media Lab。</p>
