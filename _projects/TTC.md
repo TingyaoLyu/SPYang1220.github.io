@@ -36,28 +36,28 @@ Mingrui Ray Zhang, He Wen, and Jacob O. Wobbrock. 2019. Type, Then Correct: Inte
 <h4 class="P-subtitle">Images</h4>
 <table class="P-galary" border="0" cellspacing="7px" cellpadding="5px" style="margin-left:auto;margin-right:auto;text-align:left">
 <tr>
-<td><img src="../assets/img/blank.png" align="center" alt="" data-echo="../assets/img/portfolio/ttc.png" align="center"/></td>
+<td><img src="../assets/img/portfolio/ttc.png" align="center"/></td>
 </tr>
 <tr>
 <td>Interaction overview. Drag-n-Drop (a) Drag-n-Throw (b) Magic Key (c)</td>
 </tr>
 
 <tr>
-<td><img src="../assets/img/blank.png" align="center" alt="" data-echo="../assets/img/research/TTC.png"/></td>
+<td><img src="../assets/img/research/TTC.png" align="center"/></td>
 </tr>
 <tr>
 <td>Usage demonstration</td>
 </tr>
  
 <tr>
-<td><img src="../assets/img/blank.png" align="center" alt="" data-echo="../assets/img/portfolio/ttc_network1.png" align="center"/></td>
+<td><img src="../assets/img/portfolio/ttc_network1.png" align="center"/></td>
 </tr>
 <tr>
 <td>RNN structure overview.</td>
 </tr> 
 
 <tr>
-<td><img src="../assets/img/blank.png" align="center" alt="" data-echo="../assets/img/portfolio/ttc_network1.png" align="center"/></td>
+<td><img src="../assets/img/portfolio/ttc_network1.png" align="center"/></td>
 </tr>
 <tr>
 <td>The encoder and decoder of the RNN structure</td>
@@ -66,4 +66,3 @@ Mingrui Ray Zhang, He Wen, and Jacob O. Wobbrock. 2019. Type, Then Correct: Inte
 </table>
 </div>
 
-{% include lazyload.html %}
