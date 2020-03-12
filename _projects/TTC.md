@@ -57,7 +57,7 @@ Mingrui Ray Zhang, He Wen, and Jacob O. Wobbrock. 2019. Type, Then Correct: Inte
 </tr> 
 
 <tr>
-<td><img src="../assets/img/portfolio/ttc_network1.png" align="center"/></td>
+<td><img src="../assets/img/portfolio/ttc_network2.png" align="center"/></td>
 </tr>
 <tr>
 <td>The encoder and decoder of the RNN structure</td>
