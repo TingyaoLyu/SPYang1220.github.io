@@ -40,7 +40,7 @@ Wen He (moreD), Liu Yifang, Liu Yuqun, Zhang Yiming and Bao Yuxiang
 
 <h5>Family</h5>
 <ul>
-My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 6-year-old poodle.
+My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 8-year-old poodle.
 </ul>
 
 <br/>
