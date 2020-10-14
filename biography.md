@@ -7,7 +7,7 @@ order: 4
 ---
 中文简介请见下方。一本书：<a href="https://zhang-ming-rui.gitbook.io/when-rocket-goes-up/" target="_blank">《火箭升空之时》</a>
 <h3>About me</h3>
-<p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan in 1995. Currently I'm doing research on HCI in University of Washington, Seattle.</p>
+<p>My name is Mingrui (Ray) Zhang. I was born in Kaifeng, Henan in 1995. Currently I'm doing research on HCI at University of Washington, Seattle.</p>
 <p>I graduated from the Computer Science and Engineering department in Tsinghua University 2017. I was an exchange student in the Chinese University of Hong Kong, and was in Fluid Interface at MIT Media Lab as a visiting student.</p>
 
 <h5>Research</h5>
@@ -21,7 +21,8 @@ order: 4
 
 <h5>Enteprise</h5>
 <ul>
-<p>Currently I'm interning at Google in the Android team on improving the keyboard experience.</p>
+<p>I worked at <a href="https://tech.fb.com/ar-vr/" target="_blank">Facebook Reality Lab</a> to design and implement text entry interactions with EMG signals on wearable devices.</p>
+<p>I worked at Google in <a href="https://www.android.com/" target="_blank">the Android team</a> on improving the keyboard correction experience.</p>
 <p>I worked in <a href="https://momenta.ai" target="_blank">Momenta.ai</a> as a research intern on Freespace Detection</p>
 <p>I worked in <a href="https://mailtime.com/" target="_blank">Mailtime</a> as an iOS intern.</p>
 <p>I was a co-founder of LEEZEE Inc., Beijing.</p>
@@ -67,7 +68,8 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 8-year-old p
 <p>16年春夏我在 Mailtime 担任iOS实习生。</p>
 <p>我曾创业。工作团队是北京栗子工作室，由清华美院学长王鑫带领。目前作品为iOS端的“有劲相机”，现已退出</p>
 <p>16冬至17夏在Momenta.ai，一家研究自动驾驶的公司实习。</p>
-<p>19年夏在Google Research。</p>
+<p>19年夏在Google Research, 探索手机键盘智能输入的更多可能。</p>
+<p>20年夏在Facebook Reality Lab，由于COVID在家远程思考以及设计如何将肌电信号(EMG)转化为文字输入的交互。</p>
 <p>未来会考虑成立公司。</p>
 </ul>
 
