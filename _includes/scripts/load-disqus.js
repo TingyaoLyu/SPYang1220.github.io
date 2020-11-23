@@ -5,9 +5,9 @@
     this.page.title = '{{ page.title }}';
     this.page.identifier = '{{ page.id }}';
     this.page.url = '{{ page.url | absolute_url }}';
-    let testurl = '{{page.url}}'
-    console.log('test url: '+testurl)
-    console.log(this.page.url)
+    // let testurl = '{{page.url}}'
+    // console.log('test url: '+testurl)
+    // console.log(this.page.url)
   };
 
   w._disqusFirst = typeof w._disqusFirst != 'undefined' ? w._disqusFirst : true;
