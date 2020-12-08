@@ -12,11 +12,11 @@ tags: [programming, computer vision]
 <p>因此，我们的任务是：找到每个通道图片相互最佳匹配的位置，然后在对应位置把他们叠加起来。呈现出最好的效果。</p>
 
 <p>为了给大家一种直观感受，先放出一张原始图片：</p>
-<img src="http://lcweb2.loc.gov/service/pnp/prok/00900/00911r.jpg" alt="tower" height="" width="" style="display: block; margin-left: auto; margin-right: auto">
+<img src="/assets/img/post/imagealign_original.jpg" alt="tower" height="" width="" style="display: block; margin-left: auto; margin-right: auto">
 <p>这是没有处理前直接合成的图像：</p>
-<img src="http://cs.brown.edu/courses/cs129/results/proj1/rkuppig/bad_00911u.jpg" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto">
+<img src="/assets/img/post/imagealign_bad.jpg" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto">
 <p>这是经过处理后合成的图像:</p>
-<img src="http://cs.brown.edu/courses/cs129/results/proj1/rkuppig/00911u.jpg" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto">
+<img src="/assets/img/post/imagealign_good.jpg" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto">
 <br>
 <hr>
 <p>现在正式开始我的讲座！首先是目录</p>
@@ -37,11 +37,11 @@ tags: [programming, computer vision]
 		<p>首先想到的就是，把base图片放在下面，然后让匹配图片从上往下、从左到右一个像素一个像素扫描，计算最佳的匹配点。也就是考虑每个像素作为图像原点的情况。当然，如果想周全，还可以在匹配图片周围增加一些空白区域，让这些空白区域作为原点（这样相当于匹配图像有内容的部分向右下角移动）。可是这样做，必定是十分耗费时间的。如果图片size为m*n，那么这样操作下来需要O((m*n)^2)的复杂度，稍大点的图片就不能接受。</p>
 	</ul>
 	<ul><h4>高斯金字塔</h4>
-		<p>这里我们介绍一个得力助手：高斯金字塔。<a href="http://docs.opencv.org/doc/tutorials/imgproc/pyramids/pyramids.html" target="_blank">Opencv</a>对其有官方讲解。它的结构是这样的：</p>
+		<p>这里我们介绍一个得力助手：高斯金字塔。<a href="/assets/img/post/imagealign_pyramid.png" target="_blank">Opencv</a>对其有官方讲解。它的结构是这样的：</p>
 		<br ><img src="/assets/img/post/imagealign_pyramid.png" style="display: block; margin-left: auto; margin-right: auto;"/><br> 
 		<p>所以，这个金字塔帮我们做的，就是不断减小图片的规模。具体做法是先高斯平滑，然后去偶数行和偶数列生成下一层，这样一来，每一子层的大小是其父层的1/4。你可以设定最高层的大小，30*30或者16*16就好。即便20000*20000分辨率的图片，也不过只有8,9层。这样一来，我们可以先在最小层上找到最佳匹配点的估计，然后慢慢扩大，逐步逼近，这样就会节省大量的时间。</p>
 		<p>具体做法是，在较顶层的时候，我们用较大的搜索范围来搜索最佳匹配点，这样不会浪费多少时间。而且因为高层的图片较小、模糊，所以哪怕全面搜索也是值得的（因为匹配不是很精确）。但随着层次下降，我们就需要相应地减少搜索范围。由于已经知道了上一层的最佳点(x,y)，那么对于当前层，上一层的(x,y)对应这一层的(2x,2y)（根据建立金字塔的规则）。而在金字塔建立的过程中，每四个像素会舍去三个像素，也就是说，上一层最佳匹配点周围会有8个像素是被抛弃的(下图中白格子是下一层被保留的像素，深蓝色是被抛弃的像素,每个白格子周围有8个蓝格子):</p>
-		<img src="/assets/img/post/imagealign_pyramid2.png" alt="tower" height="200" width="600" style="display: block; margin-left: auto; margin-right: auto"><br>
+		<img src="/assets/img/post/imagealign_pyramid2.png" alt="tower" height="200" width="500" style="display: block; margin-left: auto; margin-right: auto"><br>
 		<p>这样一来，由于上一层已经搜索过的点不需要再次搜索，我们只需要在当前层搜索上一层未搜索过的这八个像素点，然后与当前最佳匹配点进行比较就好。</p>
 		<p>所以，这样一来，除去最高几层的搜索，其他每层只需要搜索9次，运行起来也是飞快啦。</p>
 	</ul>
@@ -53,7 +53,7 @@ tags: [programming, computer vision]
 <ul><h4 id="3">边缘裁剪</h4>
 	<ul><h4>问题</h4>
 		<p>合并好我们的三通道图像之后，由于对齐把通道平移的缘故，会发现边缘会出现很多彩色条纹：</p>
-		<img src="http://cs.brown.edu/courses/cs129/results/proj1/taox/img/crop1.png" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto"><br>
+		<img src="/assets/img/post/imagealign_res1.png" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto"><br>
 		<p>如何尽可能消除这些边框，又不伤害原本的内容呢？</p>
 	</ul>
 	<ul><h4>解决第一步</h4>
@@ -63,7 +63,7 @@ tags: [programming, computer vision]
 		<p>不过恼人的边框依然存在。查看原图的话，你就会发现每张图片边缘会有黑色的区域。怎么消除它们？我用了一个比较笨的方法：先把图片转为灰度图像（只有一个通道），然后在边缘部分，一行一行地搜索，如果连续三行灰度的标准差大于某一个阈值，则判定这时候已经进入了图片内容的部分，停止搜索并且裁剪。否则就可以假设一直都是彩色边框。</p>
 	</ul>
 	<p>消除条纹后的结果：</p>
-		<img src="http://cs.brown.edu/courses/cs129/results/proj1/taox/img/crop6.png" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto"><br>
+		<img src="/assets/img/post/imagealign_crop.png" alt="tower" height="300" width="300" style="display: block; margin-left: auto; margin-right: auto"><br>
 </ul>
 <ul><h4 id="3">色彩校正</h4>
 	<ul><h4>问题</h4>
