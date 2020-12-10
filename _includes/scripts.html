@@ -11,6 +11,8 @@
   <!--[if gt IE 9]><!---->
   {% capture js_url %}{% link assets/js/hydejack.js %}?v=6.6.1{% endcapture %}
   <script>loadJSDeferred('{{ js_url | relative_url }}');</script>
+  {% capture dr_js_url %}{% link assets/js/drcustom.js %}{% endcapture %}
+  <script>loadJSDeferred('{{ dr_js_url | relative_url }}');</script>
 
   {% include my-scripts.html %}
   <!--<![endif]-->

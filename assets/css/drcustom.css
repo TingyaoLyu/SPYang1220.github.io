@@ -69,3 +69,61 @@ a {
 	margin: 0 auto;
 	display: block;
 }
+
+/*for dark theme*/
+
+#darkModeToggle {
+  opacity: 0;
+  /*position: absolute;*/
+}
+
+.dmt_label {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  position: relative;
+  height: 26px;
+  width: 55px;
+  transform: scale(1.5);
+}
+
+.dmt_label .dmt_ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+#darkModeToggle:checked + .dmt_label .dmt_ball {
+  transform: translateX(28px);
+}
+
+#darkModeToggle:checked + .dmt_label {
+  background-color: rgba(13, 149, 228, 0.8);
+}
+
+body.dark {
+  background: #27253d;
+  color: #c9d1d9;
+}
+
+img.dark {
+  filter: brightness(50%);
+}
+
+#modeToggleDiv {
+  padding-left: 7px;
+}
+
+#ascii {
+  background-color: transparent !important;
+}

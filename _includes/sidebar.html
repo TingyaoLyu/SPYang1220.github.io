@@ -2,10 +2,21 @@
   <div id="_sidebar" class="sidebar">
     <div class="sidebar-bg" style="background-color:{{ color }};background-image:url({{ image }})"></div>
     <header class="sidebar-sticky" role="banner">
+      <!-- for dark mode toggle -->
+      <div id="modeToggleDiv">
+        <input type="checkbox" id="darkModeToggle" />
+        <label class="dmt_label" for="darkModeToggle">
+          <b>☀️</b>
+          <b>🌓</b>
+          <div class="dmt_ball"></div>
+        </label>
+      </div>
+
       <div class="sidebar-about">
         <h1><a id="_title" href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
         {{ site.description | truncatewords:50 | markdownify }}
       </div>
+      
 
       <nav class="sidebar-nav heading" role="navigation">
         {% include nav.html %}
