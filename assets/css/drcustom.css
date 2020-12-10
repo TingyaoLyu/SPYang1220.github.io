@@ -124,6 +124,6 @@ img.dark {
   padding-left: 7px;
 }
 
-#ascii {
+.ascii {
   background-color: transparent !important;
 }
