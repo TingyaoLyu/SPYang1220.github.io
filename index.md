@@ -9,7 +9,7 @@ My research interests are in Human-Computer Interaction, specifically text entry
 
 Before moving to Seattle, I was a student of Computer Science & Technology in Tsinghua University, China, where I worked as a researcher as well as in industry. Back then, [Dr. Chun Yu] opened the world of HCI to me.
 
-I enjoy playing computer games in my spare time, but you know, I rarely have spare time :) You can find me at [Zhihu] or Wechat official account <i>thisisdrustz</i>
+I enjoy playing computer games in my spare time, but you know, I rarely have spare time :) You can find me at [Zhihu], on Wechat official account <i>thisisdrustz</i>, or a [short profile] of me from UW iSchool.
 <br><br>
 <head>
     <link href="assets/css/drcustom.css" rel="stylesheet" type="text/css">
@@ -38,3 +38,4 @@ I enjoy playing computer games in my spare time, but you know, I rarely have spa
 [ACE Lab]: http://depts.washington.edu/acelab/
 [Dr. Chun Yu]: http://pi.cs.tsinghua.edu.cn/lab/people/ChunYu/
 [Zhihu]: https://www.zhihu.com/people/drustz
+[short profile]: https://ischool.uw.edu/programs/phd/people/students/zhang
