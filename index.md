@@ -5,7 +5,7 @@ title: Home
 
 Greetings! I'm Mingrui Zhang, a fourth year Ph.D. at the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
 
-My research interests are in Human-Computer Interaction, specifically text entry, input methods, and interaction techniques, where I seek better methods to make technology natural and seamless. At the same time, I'm applying machine learning techniques to make intelligent text entry methods.
+My research interests are in Human-Computer Interaction, specifically in inventing intelligent text entry methods that understand our intentions. Broadly speaking, I'm interested in improving and evaluating the technology that facilitates human communication process (e.g. smart speaker, auto correction/prediction), and making them accessible for people with different abilities.
 
 Before moving to Seattle, I was a student of Computer Science & Technology in Tsinghua University, China, where I worked as a researcher as well as in industry. Back then, [Dr. Chun Yu] opened the world of HCI to me.
 
