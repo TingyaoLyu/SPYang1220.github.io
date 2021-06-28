@@ -3,7 +3,7 @@ layout: about
 title: Home
 ---
 
-Greetings! I'm Mingrui Zhang, a fourth year Ph.D. at the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
+Greetings! I'm Mingrui Zhang (张明瑞), a fourth year Ph.D. at the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
 
 My research interests are in Human-Computer Interaction, specifically in inventing intelligent text entry methods that understand our intentions. Broadly speaking, I'm interested in improving and evaluating the technology that facilitates human communication process (e.g. smart speaker, auto correction/prediction), and making them accessible for people with different abilities.
 
