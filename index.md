@@ -3,7 +3,7 @@ layout: about
 title: Home
 ---
 
-<i style="color:red;">🎊  I'm on job marcket this year and am looking for academic or industrial research positions. Feel free to connect with me! </i>
+<i style="color:red;">🎊  I'm on job marcket this year and am looking for academic or industrial research positions. Feel free to connect with me! </i> (Here are my [Research Statement] and [Teaching Statement])
 
 Greetings! I'm Mingrui Zhang (张明瑞), a fifth year Ph.D. at the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
 
@@ -34,7 +34,8 @@ I enjoy playing computer games in my spare time, but you know, I rarely have spa
 </pre>
 </div>
 
-
+[Research Statement]: /assets/pdf/Research_Statement_Mingrui_Zhang.pdf
+[Teaching Statement]: /assets/pdf/Teaching_Statement_Mingrui_Zhang.pdf
 [Information School]: https://ischool.uw.edu/
 [Jacob O. Wobbrock]: http://faculty.washington.edu/wobbrock/
 [ACE Lab]: http://depts.washington.edu/acelab/
