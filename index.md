@@ -34,8 +34,8 @@ I enjoy playing computer games in my spare time, but you know, I rarely have spa
 </pre>
 </div>
 
-[Research Statement]: /assets/pdf/Research_Statement_Mingrui_Zhang.pdf
-[Teaching Statement]: /assets/pdf/Teaching_Statement_Mingrui_Zhang.pdf
+[Research Statement]: /assets/pdfs/Research_Statement_Mingrui_Zhang.pdf
+[Teaching Statement]: /assets/pdfs/Teaching_Statement_Mingrui_Zhang.pdf
 [Information School]: https://ischool.uw.edu/
 [Jacob O. Wobbrock]: http://faculty.washington.edu/wobbrock/
 [ACE Lab]: http://depts.washington.edu/acelab/
