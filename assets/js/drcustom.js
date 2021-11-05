@@ -24,7 +24,6 @@ if(document.readyState === 'loading') {
 }
 
 function afterDOMLoaded(){
-	console.log('testteddsa2st')
 	console.log('init local mode: ' + localStorage.getItem('mode'))
   	if (localStorage.getItem('mode') === 'dark'){
 		document.querySelector('body').classList.add('dark')
@@ -37,7 +36,6 @@ function afterDOMLoaded(){
 }
 
 document.getElementById('_yPushState').addEventListener('y-push-state-load', function() {
-	console.log('testtest')
 	console.log('init local mode: ' + localStorage.getItem('mode'))
   	if (localStorage.getItem('mode') === 'dark'){
 		document.querySelector('body').classList.add('dark')
