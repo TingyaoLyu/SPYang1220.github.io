@@ -22,6 +22,7 @@ order: 4
 
 <h5>Enteprise</h5>
 <ul>
+<p>I worked at <a href="https://www.apple.com/" target="_blank">Apple</a> to prototype novel input interactions on xxxx. </p>
 <p>I worked at <a href="https://tech.fb.com/ar-vr/" target="_blank">Facebook Reality Lab</a> to design and implement text entry interactions with EMG signals on wearable devices.</p>
 <p>I worked at Google in <a href="https://www.android.com/" target="_blank">the Android team</a> on improving the keyboard correction experience.</p>
 <p>I worked in <a href="https://momenta.ai" target="_blank">Momenta.ai</a> as a research intern on Freespace Detection</p>
@@ -71,6 +72,7 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 8-year-old p
 <p>16冬至17夏在Momenta.ai，一家研究自动驾驶的公司实习。</p>
 <p>19年夏在Google Research, 探索手机键盘智能输入的更多可能。</p>
 <p>20年夏在Facebook Reality Lab，由于COVID在家远程思考以及设计如何将肌电信号(EMG)转化为文字输入的交互。</p>
+<p>21年夏在Apple，为xxxx开发输入交互。</p>
 <p>未来会考虑成立公司。</p>
 </ul>
 
