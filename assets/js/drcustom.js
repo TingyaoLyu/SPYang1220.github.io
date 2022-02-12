@@ -49,7 +49,7 @@ document.getElementById('_yPushState').addEventListener('y-push-state-load', fun
 
 
 // For back to top button
-const showOnPx = 300;
+const showOnPx = 500;
 const backToTopButton = document.querySelector(".back-to-top")
 
 const scrollContainer = () => {
