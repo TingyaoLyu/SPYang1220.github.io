@@ -70,6 +70,45 @@ a {
 	display: block;
 }
 
+/* Scroll to top */
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 80%;
+  background: #1b455f;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 70%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffffff;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+/* Reading Progress Bar */
+.progress-bar {
+  height: 0.5rem;
+  border-radius: 0.2rem;
+  background: rgb(29, 102, 145);
+  box-shadow: 1px 0px 1rem rgba(128, 128, 128, 0.76);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  transition: opacity 0.5s;
+}
+
 /*for dark theme*/
 
 #darkModeToggle {
