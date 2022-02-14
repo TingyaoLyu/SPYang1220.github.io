@@ -47,7 +47,6 @@ document.getElementById('_yPushState').addEventListener('y-push-state-load', fun
 	}
 });
 
-
 // For back to top button
 const showOnPx = 1000;
 const backToTopButton = document.querySelector(".back-to-top")
