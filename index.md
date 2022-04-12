@@ -3,7 +3,7 @@ layout: about
 title: Home
 ---
 
-<i style="color:red;">🎊  I'm on job market this year and am looking for academic or industrial research positions. Feel free to connect with me! </i> (Here are my <a href="assets/pdfs/Research_Statement_Mingrui_Zhang.pdf" target="_blank">Research Statement</a> and <a href="assets/pdfs/Teaching_Statement_Mingrui_Zhang.pdf" target="_blank">Teaching Statement</a>)
+<i style="color:red;">🎊  Interview season is over! I'll update my next step soon :) </i> 
 
 Greetings! I'm Mingrui Zhang (张明瑞), a fifth year Ph.D. at the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
 
