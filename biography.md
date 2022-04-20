@@ -38,12 +38,12 @@ order: 4
 
 <h5>My friends</h5>
 <ul>
-Yuying Liu, Qin Wang, He Wen (moreD), Yifang Liu, Yuqun Liu, Yiming Zhang and Yuxiang Bao
+<a href="https://www.linkedin.com/in/yuying-liu-980ab6a4/" target="_blank">Yuying Liu</a>, <a href="https://www.linkedin.com/in/qin-wang-3b482816b/" target="_blank">Qin Wang</a>, <a href="http://xmushui.com/" target="_blank">Yi Chu</a>, <a href="https://www.linkedin.com/in/hewen/" target="_blank">He Wen (moreD)</a>, <a href="https://www.linkedin.com/in/yifang-liu-52792b1ba/" target="_blank">Yifang Liu</a>, Yuqun Liu, Yiming Zhang, <a href="https://luyuliu.github.io/" target="_blank">Luyu Liu</a> and <a href="https://www.linkedin.com/in/yuxiangbao/" target="_blank">Yuxiang Bao</a>
 </ul>
 
 <h5>Family</h5>
 <ul>
-My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 8-year-old poodle.
+My mom is a nurse, and my dad, a government staff. My sister works with my dad. Belle is my cat's name.
 </ul>
 
 <br/>
@@ -86,12 +86,12 @@ My mom is a nurse, and my dad, a government staff. Cheng-cheng is a 8-year-old p
 <h5>朋友们</h5>
 <ul>
 <p>我的室友，@温和，一个技术宅。</p>
-<p>高中以来的朋友：<a href="https://www.linkedin.com/in/yifang-liu-52792b1ba/" target="_blank">刘一方</a>，刘豫群, 张一鸣以及<a href="https://www.linkedin.com/in/yuxiangbao/" target="_blank">暴宇翔</a>。</p>
+<p>高中以来的朋友：<a href="https://www.linkedin.com/in/yifang-liu-52792b1ba/" target="_blank">刘一方</a>，刘豫群, 张一鸣, <a href="https://luyuliu.github.io/" target="_blank">刘鲁豫</a>, 以及<a href="https://www.linkedin.com/in/yuxiangbao/" target="_blank">暴宇翔</a>。</p>
 <p>我的三位大学室友：<a href="https://www.linkedin.com/in/hewen/" target="_blank">温和</a>，蒋文明，<a href="https://www.linkedin.com/in/dichen-qian-236524103/" target="_blank">钱迪晨</a>。</p>
 <p>我的PhD室友：张一鸣，<a href="https://www.linkedin.com/in/qin-wang-3b482816b/" target="_blank">王钦</a>，<a href="https://www.linkedin.com/in/yuying-liu-980ab6a4/" target="_blank">刘宇赢</a>, <a href="http://xmushui.com/" target="_blank">初翼</a>。</p>
 </ul>
 
 <h5>我的父母</h5>
 <ul>
-我的母亲是一位护士，父亲是政府机构人员。
+我的母亲是一位护士，父亲是政府机构人员，姐姐和父亲一起工作。我的猫叫做蓓尔。
 </ul>
