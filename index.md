@@ -3,7 +3,7 @@ layout: about
 title: Home
 ---
 
-<i style="color:red;">🎊  Interview season is over! I'll update my next step soon :) </i> 
+<i style="color:red;">🎊  I'll join Meta Reality Labs as a Research Scientist at New York in Fall 2022! To celebrate my graduation, I'm traveling around the world during the summer :) </i> 
 
 Greetings! I'm Mingrui Zhang (张明瑞), a fifth year Ph.D. at the University of Washington [Information School]. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
 
