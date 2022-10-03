@@ -3,9 +3,7 @@ layout: about
 title: Home
 ---
 
-<i style="color:red;">🎊  I'll join Meta Reality Labs as a Research Scientist at New York in Fall 2022! To celebrate my graduation, I'm traveling around the world during the summer :) </i> 
-
-Greetings! I'm Mingrui Zhang (张明瑞)。 I just graduated from the University of Washington [Information School] as a Ph.D. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
+Greetings! I'm Mingrui Zhang (张明瑞). I am a Research Scientist at [Meta Reality Labs], New York. I just graduated from the University of Washington [Information School] as a Ph.D. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
 
 My research interests are in Human-Computer Interaction, specifically in inventing intelligent text entry methods that understand our intentions. Broadly speaking, I'm interested in improving and evaluating the technology that facilitates human communication process (e.g. smart speaker, auto correction/prediction), and making them accessible for people with different abilities.
 
@@ -38,6 +36,7 @@ I enjoy playing computer games in my spare time, but you know, I rarely have spa
 </pre>
 </div>
 
+[Meta Reality Labs]: https://about.meta.com/realitylabs/
 [Information School]: https://ischool.uw.edu/
 [Jacob O. Wobbrock]: http://faculty.washington.edu/wobbrock/
 [ACE Lab]: http://depts.washington.edu/acelab/
