@@ -1,7 +1,7 @@
 ---
-title: Portfolio
-layout: project
-permalink: portfolio.html
+title: Data
+layout: data
+permalink: data.html
 menu: true
 order: 2
 ---

@@ -1,9 +1,9 @@
 ---
-title: Biography
+title: Recruitment
 layout: page
-permalink: bio.html
+permalink: recruitment.html
 menu: true
-order: 4
+order: 3
 ---
 中文简介请见下方。一本书：<a href="https://zhang-ming-rui.gitbook.io/when-rocket-goes-up/" target="_blank">《火箭升空之时》</a> 微信公众号：thisisdrustz
 
