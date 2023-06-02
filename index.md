@@ -3,11 +3,7 @@ layout: about
 title: Home
 ---
 
-Greetings! I'm Mingrui Zhang (张明瑞). I am a Research Scientist at [Meta Reality Labs], New York. I just graduated from the University of Washington [Information School] as a Ph.D. My advisor is Prof. [Jacob O. Wobbrock], who directs the [ACE Lab].
-
-My research interests are in Human-Computer Interaction, specifically in inventing intelligent text entry methods that understand our intentions. Broadly speaking, I'm interested in improving and evaluating the technology that facilitates human communication process (e.g. smart speaker, auto correction/prediction), and making them accessible for people with different abilities.
-
-Before moving to Seattle, I was a student of Computer Science & Technology in Tsinghua University, China, where I worked as a researcher as well as in industry. Back then, [Dr. Chun Yu] opened the world of HCI to me.
+Greetings! I'm Songpo Yang (杨松坡). I am a visiting Ph.D. Student at Columbia University, New York.
 
 I enjoy playing computer games in my spare time, but you know, I rarely have spare time :) You can find me at [Zhihu], on Wechat official account <i>thisisdrustz</i>, a [featured news] and a [short profile] of me from UW iSchool.
 <br><br>

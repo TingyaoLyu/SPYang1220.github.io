@@ -11,13 +11,13 @@ Ray:
 
   # This photo will be used in the about section
   picture:
-    src:             http://drustz.com/assets/img/icon.png
+    src:             https://i0.wp.com/short-biography.com/wp-content/uploads/bibi-jones/BiBi-Jones-1.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        100003532981477
+    # facebook:        100003532981477
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -41,16 +41,16 @@ Ray:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    github:          DrustZ
+    github:          SPYang1220
     # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    linkedin:        zhangmr
+    # linkedin:        zhangmr
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:mingrui@uw.edu
+    email:           mailto:yangsp21@mails.tsinghua.edu.cn
     # rss:             https://<url>/feed.xml
