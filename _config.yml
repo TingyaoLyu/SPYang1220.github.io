@@ -26,7 +26,7 @@ author:
   email:             yangsp21@mails.tsinghua.edu.cn
 
 # Fallback image and color
-image:               http://theiphonewalls.com/wp-content/uploads/2013/12/New-York-City-Manhattan-Bridge-Night-Light-Bokeh.jpg
+image:               https://github.com/SPYang1220/SPYang1220.github.io/tree/master/assets/img/Background.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
