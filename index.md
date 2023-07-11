@@ -3,10 +3,10 @@ layout: about
 title: Home
 ---
 
-Greetings! I'm Songpo Yang (杨松坡). I am a visiting Ph.D. Student at Columbia University, New York.
+Greetings! I'm Songpo Yang (杨松坡). I am a Ph.D. candidate in the Department of International Relations at Tsinghua University, and also a visiting PhD student in the Department of Political Science at Columbia University, New York City, 2022–2023.
 
-I enjoy playing computer games in my spare time, but you know, I rarely have spare time :) You can find me at [Zhihu], on Wechat official account <i>thisisdrustz</i>, a [featured news] and a [short profile] of me from UW iSchool.
-<br><br>
+My research encompasses a range of topics including political leadership, political selection, China’s foreign policy and state–business relations. My work has been published on \textit{\textbf{International Affairs}}. (\href{https://academic.oup.com/ia/article-abstract/99/4/1383/7216720?redirectedFrom=fulltext}{Link}) 
+<br><br> 
 <head>
     <link href="assets/css/drcustom.css" rel="stylesheet" type="text/css">
 </head>
