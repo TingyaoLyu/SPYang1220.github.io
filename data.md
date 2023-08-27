@@ -1,6 +1,6 @@
 ---
 title: Data
-layout: data
+layout: page
 permalink: data.html
 menu: true
 order: 2
