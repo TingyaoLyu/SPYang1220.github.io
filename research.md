@@ -1,6 +1,6 @@
 ---
 title: Research
-layout: research
+layout: page
 permalink: research.html
 menu: true
 order: 1
