@@ -8,8 +8,10 @@ order: 3
 I'm regularly looking for (paid) research assistants to help with data collection, programming, and database management. Send me a CV and a brief statement of purpose if you are interested. ​
 
 <h3>About my research topics</h3>
+<ul>
 <Li>Facial characteristics and political behaviors: how (perceptions of) facial characteristics of political leaders affect their promotions, survivals and policy preferences, etc.</Li>
 <Li>Irrational factors and political behaviors: how irrational factors drive interactions between different political players.</Li>
+</ul>
 
 <h3>Preferred partners</h3>
 <ul>
