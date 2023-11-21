@@ -5,15 +5,14 @@ permalink: research.html
 menu: true
 order: 1
 ---
-I'm regularly looking for (paid) research assistants to help with data collection, programming, and database management. Send me a CV and a brief statement of purpose if you are interested. ​
+<h3>Publications</h3>
+<p>1. “China and the Liberal International Order: A Pragmatic and Dynamic Approach,”
+Ruonan Liu and Songpo Yang 
+International Affairs (2023)(\href{https://academic.oup.com/ia/article-abstract/99/4/1383/7216720?redirectedFrom=fulltext}{Link})</p>
 
-<h3>About my research topics</h3>
-<p>·Facial characteristics and political behaviors: how (perceptions of) facial characteristics of political leaders affect their promotions, survivals and policy preferences, etc.</p>
-<p>·Irrational factors and political behaviors: how irrational factors drive interactions between different political players.</p>
-
-<h5>Preferred partners</h5>
+<h3>Working Papers</h3>
 <ul>
-<p>·Intellectually curious and hard working.</p>
+<p>From Competition to Conviction: Exploring Superstition in China’s Competitive Landscape</p>
 
 <p>·Well trained in political theories and quantitative methods.</p>
 <p>·Dedicated for an academic career.</p>
